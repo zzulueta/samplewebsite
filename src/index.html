@@ -73,17 +73,30 @@
       z-index: 1000;
       border: 1px solid #ccc;
       background-color: #fff;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #chatbot-iframe {
+      flex-grow: 1;
+      width: 100%;
+      height: 100%;
     }
 
     #toggle-button {
-      position: absolute;
-      top: -30px; /* Adjust as needed */
-      right: 0;
       background-color: #0078d4;
       color: #fff;
       border: none;
       padding: 5px 10px;
       cursor: pointer;
+      width: 100%;
+    }
+
+    #collapsed-container {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      z-index: 1000;
     }
   </style>
 
@@ -104,23 +117,42 @@
 
 <body class="site-default navigation-default theme-default layout-home nav-breakpoint-lg navigation-hide com_content view-featured item-101" data-jver="4"><section class="djacc djacc-container djacc-popup djacc--hidden djacc--light djacc--sticky djacc--top-right">
   
-  <div id="chatbot-container">
-    <iframe id="chatbot-iframe" src="https://copilotstudio.preview.microsoft.com/environments/Default-0768cfb4-8b34-4ee9-81c9-38efdda2ec0d/bots/cra26_copilotAzureAiStudio/webchat?__version__=2" frameborder="0" style="width: 100%; height: 100%;"></iframe>
-    <button id="toggle-button">Hide</button>
-  </div>
+  <style>
+    #chatbot-container {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 300px; /* Adjust as needed */
+      height: 400px; /* Adjust as needed */
+      z-index: 1000;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+    }
 
-  <script>
-    document.getElementById('toggle-button').addEventListener('click', function() {
-      var iframe = document.getElementById('chatbot-iframe');
-      if (iframe.style.display === 'none') {
-        iframe.style.display = 'block';
-        this.textContent = 'Hide';
-      } else {
-        iframe.style.display = 'none';
-        this.textContent = 'Show';
-      }
-    });
-  </script>
+    #chatbot-iframe {
+      flex-grow: 1;
+      width: 100%;
+      height: 100%;
+    }
+
+    #toggle-button {
+      background-color: #0078d4;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    #collapsed-container {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      z-index: 1000;
+    }
+  </style>
 
 
 			<button class="djacc__openbtn djacc__openbtn--custom" aria-label="Open accessibility tools" title="Open accessibility tools">
