@@ -1,17 +1,2329 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" class="j4" xml:lang="en-gb" lang="en-gb" dir="ltr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
-</head>
+  
+  <meta charset="utf-8">
+	<meta name="description" content="Department of Budget and Management created under Executive Order No. 25 dated April 25, 1936, is mandated under this Order and by subsequent issuances">
+	<title>Department of Budget and Management</title>
+	<link href="/index.php?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="Department of Budget and Management">
+	<link href="/index.php?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Department of Budget and Management">
+	<link href="/images/dbmlogo-32x32.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="https://www.dbm.gov.ph/index.php/about-the-dbm-2/annual-reports/annual-reports?format=opensearch" rel="search" title="OpenSearch Department of Budget and Management" type="application/opensearchdescription+xml">
+	<link href="/media/modals/css/style.min.css?ec7b73d01cd3e80b5d93978730aedf11" rel="stylesheet" />
+	<link href="/media/modals/css/theme-dark.min.css?ec7b73d01cd3e80b5d93978730aedf11" rel="stylesheet" />
+	<link href="/media/modals/css/theme-light.min.css?ec7b73d01cd3e80b5d93978730aedf11" rel="stylesheet" />
+	<link href="/plugins/system/t4/themes/base/vendors/font-awesome5/css/all.min.css?ec7b73d01cd3e80b5d93978730aedf11" rel="stylesheet" />
+	<link href="/plugins/system/t4/themes/base/vendors/font-awesome/css/font-awesome.min.css?ec7b73d01cd3e80b5d93978730aedf11" rel="stylesheet" />
+	<link href="/plugins/system/t4/themes/base/vendors/icomoon/css/icomoon.css?ec7b73d01cd3e80b5d93978730aedf11" rel="stylesheet" />
+	<link href="/media/vendor/awesomplete/css/awesomplete.css?1.1.5" rel="stylesheet" />
+	<link href="/media/vendor/joomla-custom-elements/css/joomla-alert.min.css?0.2.0" rel="stylesheet" />
+	<link href="/plugins/system/t4/themes/base/vendors/js-offcanvas/_css/js-offcanvas.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100i%2C200i%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%2C900i" rel="stylesheet" />
+	<link href="/modules/mod_jt_contentslider/tmpl/assets/css/style.css" rel="stylesheet" />
+	<link href="/modules/mod_jt_contentslider/tmpl/assets/css/lightbox.css" rel="stylesheet" />
+	<link href="/templates/ja_campaign/css/template.css" rel="stylesheet" />
+	<link href="/media/t4/css/23.css" rel="stylesheet" />
+	<link href="/plugins/system/djaccessibility/module/assets/css/accessibility.css?1.08" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+	<style>.djacc { font-family: Roboto, sans-serif; }</style>
+	<style>.djacc { margin: 20px 20px; }</style>
+	<style>.djacc-popup .djacc__openbtn { width: 32px; height: 32px; }</style>
+<script src="/media/vendor/jquery/js/jquery.min.js?3.6.3"></script>
+	<script type="application/json" class="joomla-script-options new">{"joomla.jtext":{"RLTA_BUTTON_SCROLL_LEFT":"Scroll buttons to the left","RLTA_BUTTON_SCROLL_RIGHT":"Scroll buttons to the right","MDL_MODALTXT_CLOSE":"close","MDL_MODALTXT_PREVIOUS":"previous","MDL_MODALTXT_NEXT":"next","MOD_FINDER_SEARCH_VALUE":"Search &hellip;","JLIB_JS_AJAX_ERROR_OTHER":"An error has occurred while fetching the JSON data: HTTP %s status code.","JLIB_JS_AJAX_ERROR_PARSE":"A parse error has occurred while processing the following JSON data:<br><code style=\"color:inherit;white-space:pre-wrap;padding:0;margin:0;border:0;background:inherit;\">%s<\/code>","ERROR":"Error","MESSAGE":"Message","NOTICE":"Notice","WARNING":"Warning","JCLOSE":"Close","JOK":"OK","JOPEN":"Open"},"rl_modals":{"theme":"light","dimensionsIncludeTitle":0},"bootstrap.modal":{"#modal":{"keyboard":true,"focus":true}},"finder-search":{"url":"\/index.php\/component\/finder\/?task=suggestions.suggest&format=json&tmpl=component&Itemid=101"},"system.paths":{"root":"","rootFull":"https:\/\/www.dbm.gov.ph\/","base":"","baseFull":"https:\/\/www.dbm.gov.ph\/"},"csrf.token":"78458d4eb5042c0081a6566cb7a95a80"}</script>
+	<script src="/media/system/js/core.min.js?576eb51da909dcf692c98643faa6fc89629ead18"></script>
+	<script src="/media/vendor/bootstrap/js/bootstrap-es5.min.js?5.2.3" nomodule defer></script>
+	<script src="/media/com_finder/js/finder-es5.min.js?14e4c7fdce4ca11c6d12b74bad128529a294b183" nomodule defer></script>
+	<script src="/media/system/js/messages-es5.min.js?44e3f60beada646706be6569e75b36f7cf293bf9" nomodule defer></script>
+	<script src="/media/modals/js/script.min.js?ec7b73d01cd3e80b5d93978730aedf11" defer type="module"></script>
+	<script src="/media/legacy/js/jquery-noconflict.min.js?04499b98c0305b16b373dff09fe79d1290976288"></script>
+	<script src="/media/vendor/jquery-migrate/js/jquery-migrate.min.js?3.4.1"></script>
+	<script src="/plugins/system/t4/themes/base/vendors/bootstrap/js/bootstrap.bundle.min.js?ec7b73d01cd3e80b5d93978730aedf11"></script>
+	<script src="/templates/ja_campaign/js/isotope.pkgd.min.js?ec7b73d01cd3e80b5d93978730aedf11"></script>
+	<script src="/media/vendor/bootstrap/js/modal.min.js?5.2.3" type="module"></script>
+	<script src="/media/vendor/awesomplete/js/awesomplete.min.js?1.1.5" defer></script>
+	<script src="/media/com_finder/js/finder.min.js?c8b55661ed62db937b8d6856090adf9258c4a0fc" type="module"></script>
+	<script src="/media/system/js/messages.min.js?7425e8d1cb9e4f061d5e30271d6d99b085344117" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/dropdown.min.js?5.2.3" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/collapse.min.js?5.2.3" type="module"></script>
+	<script src="/media/t4/optimize/js/86556b7560366cf19f2ea04051f6b4f2.js"></script>
+	<script src="/plugins/system/djaccessibility/module/assets/js/accessibility.min.js?1.08"></script>
+	<script>new DJAccessibility( {"yootheme":false,"position":"sticky","layout":"popup","align_position":"top right","align_mobile":false,"align_mobile_position":"bottom right","breakpoint":"767px","direction":"top left","space":"1","version":false,"speech_pitch":"1","speech_rate":"1","speech_volume":"1"} )</script>
 
-<body>
+
+  <!--[if lt IE 9]>
+    <script src="/media/jui/js/html5.js"></script>
+  <![endif]-->
+  <meta name="viewport"  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"/>
+  <style  type="text/css">
+    @-webkit-viewport   { width: device-width; }
+    @-moz-viewport      { width: device-width; }
+    @-ms-viewport       { width: device-width; }
+    @-o-viewport        { width: device-width; }
+    @viewport           { width: device-width; }
+  </style>
+  <meta name="HandheldFriendly" content="true"/>
+  <meta name="apple-mobile-web-app-capable" content="YES"/>
+  <!-- //META FOR IOS & HANDHELD -->
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-548fde827970ba6d"></script>
+
+<link rel="stylesheet" type="text/css" href="/media/smartslider3/src/SmartSlider3/Application/Frontend/Assets/dist/smartslider.min.css?ver=cf72eab4" media="all">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?display=swap&amp;family=Roboto%3A300%2C400" media="all">
+<style data-related="n2-ss-3">div#n2-ss-3 .n2-ss-slider-1{display:grid;position:relative;}div#n2-ss-3 .n2-ss-slider-2{display:grid;position:relative;overflow:hidden;padding:0px 0px 0px 0px;border:0px solid RGBA(62,62,62,1);border-radius:0px;background-clip:padding-box;background-repeat:repeat;background-position:50% 50%;background-size:cover;background-attachment:scroll;z-index:1;}div#n2-ss-3:not(.n2-ss-loaded) .n2-ss-slider-2{background-image:none !important;}div#n2-ss-3 .n2-ss-slider-3{display:grid;grid-template-areas:'cover';position:relative;overflow:hidden;z-index:10;}div#n2-ss-3 .n2-ss-slider-3 > *{grid-area:cover;}div#n2-ss-3 .n2-ss-slide-backgrounds,div#n2-ss-3 .n2-ss-slider-3 > .n2-ss-divider{position:relative;}div#n2-ss-3 .n2-ss-slide-backgrounds{z-index:10;}div#n2-ss-3 .n2-ss-slide-backgrounds > *{overflow:hidden;}div#n2-ss-3 .n2-ss-slide-background{transform:translateX(-100000px);}div#n2-ss-3 .n2-ss-slider-4{place-self:center;position:relative;width:100%;height:100%;z-index:20;display:grid;grid-template-areas:'slide';}div#n2-ss-3 .n2-ss-slider-4 > *{grid-area:slide;}div#n2-ss-3.n2-ss-full-page--constrain-ratio .n2-ss-slider-4{height:auto;}div#n2-ss-3 .n2-ss-slide{display:grid;place-items:center;grid-auto-columns:100%;position:relative;z-index:20;-webkit-backface-visibility:hidden;transform:translateX(-100000px);}div#n2-ss-3 .n2-ss-slide{perspective:1500px;}div#n2-ss-3 .n2-ss-slide-active{z-index:21;}.n2-ss-background-animation{position:absolute;top:0;left:0;width:100%;height:100%;z-index:3;}div#n2-ss-3 .n2-ss-button-container,div#n2-ss-3 .n2-ss-button-container a{display:block;}div#n2-ss-3 .n2-ss-button-container--non-full-width,div#n2-ss-3 .n2-ss-button-container--non-full-width a{display:inline-block;}div#n2-ss-3 .n2-ss-button-container.n2-ss-nowrap{white-space:nowrap;}div#n2-ss-3 .n2-ss-button-container a div{display:inline;font-size:inherit;text-decoration:inherit;color:inherit;line-height:inherit;font-family:inherit;font-weight:inherit;}div#n2-ss-3 .n2-ss-button-container a > div{display:inline-flex;align-items:center;vertical-align:top;}div#n2-ss-3 .n2-ss-button-container span{font-size:100%;vertical-align:baseline;}div#n2-ss-3 .n2-ss-button-container a[data-iconplacement="left"] span{margin-right:0.3em;}div#n2-ss-3 .n2-ss-button-container a[data-iconplacement="right"] span{margin-left:0.3em;}div#n2-ss-3 .n2-ss-background-animation{position:absolute;top:0;left:0;width:100%;height:100%;z-index:3;}div#n2-ss-3 .n2-ss-background-animation .n2-ss-slide-background{z-index:auto;}div#n2-ss-3 .n2-bganim-side{position:absolute;left:0;top:0;overflow:hidden;background:RGBA(51,51,51,1);}div#n2-ss-3 .n2-bganim-tile-overlay-colored{z-index:100000;background:RGBA(51,51,51,1);}div#n2-ss-3 .n2-font-48ca96ad9a7eace257d537a7f255a795-link a{font-family: 'Roboto','Arial';color: #ffffff;font-size:87.5%;text-shadow: none;line-height: 1.5;font-weight: normal;font-style: normal;text-decoration: none;text-align: left;letter-spacing: normal;word-spacing: normal;text-transform: none;font-weight: 400;}div#n2-ss-3 .n2-style-fd38549eee9ab23b7211fa4859786f10-heading{background: #5cba3c;opacity:1;padding:10px 30px 10px 30px ;box-shadow: none;border: 0px solid RGBA(0,0,0,1);border-radius:0px;}div#n2-ss-3 .n2-font-b22b6590b1d0109a3ac8466f5692b0e6-link a{font-family: 'Roboto','Arial';color: #ffffff;font-size:87.5%;text-shadow: none;line-height: 1.5;font-weight: normal;font-style: normal;text-decoration: none;text-align: center;letter-spacing: normal;word-spacing: normal;text-transform: none;font-weight: 400;}div#n2-ss-3 .n2-font-176464dee0eea5b1ac11b21dab9b24d2-link a{font-family: 'Roboto','Arial';color: #ffffff;font-size:87.5%;text-shadow: none;line-height: 1.5;font-weight: normal;font-style: normal;text-decoration: none;text-align: center;letter-spacing: normal;word-spacing: normal;text-transform: none;}div#n2-ss-3 .n-uc-mLZ4iXASMZ3i{padding:20px 70px 50px 70px}div#n2-ss-3 .n-uc-FRoe4UxK38RO-inner{padding:10px 10px 0px 10px;text-align:left;--ssselfalign:var(--ss-fs);;justify-content:flex-end}div#n2-ss-3 .n-uc-FRoe4UxK38RO{align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-CW8XJZjIq9gC{height:1px;max-width:145px;align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-M7oHOkioavNd{padding:20px 70px 50px 70px}div#n2-ss-3 .n-uc-tP8zEuF5EE6R-inner{padding:10px 10px 0px 10px;text-align:left;--ssselfalign:var(--ss-fs);;justify-content:flex-end}div#n2-ss-3 .n-uc-tP8zEuF5EE6R{align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-Ctfd88EFg9xS{height:1px;max-width:145px;align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-UZALgTKKP0CU{padding:20px 70px 50px 70px}div#n2-ss-3 .n-uc-u2nTbCWQzgVq-inner{padding:10px 10px 0px 10px;text-align:left;--ssselfalign:var(--ss-fs);;justify-content:flex-end}div#n2-ss-3 .n-uc-u2nTbCWQzgVq{align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-POU3LuSBRVfD{height:1px;max-width:145px;align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-Rup0X1rDnEEc{padding:20px 70px 50px 70px}div#n2-ss-3 .n-uc-9fw8VTdxtRK3-inner{padding:10px 10px 0px 10px;text-align:left;--ssselfalign:var(--ss-fs);;justify-content:flex-end}div#n2-ss-3 .n-uc-9fw8VTdxtRK3{align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-e8VWzyvIYUQ9{height:1px;max-width:145px;align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-AIiEfNsukXBK{padding:20px 70px 50px 70px}div#n2-ss-3 .n-uc-ytCpBeElevwQ{padding:20px 70px 50px 70px}div#n2-ss-3 .n-uc-QAIBV8aHU5iz{padding:20px 70px 50px 70px}div#n2-ss-3 .n-uc-cxBnJOv5kS6V-inner{padding:10px 10px 0px 10px;text-align:left;--ssselfalign:var(--ss-fs);;justify-content:flex-end}div#n2-ss-3 .n-uc-cxBnJOv5kS6V{align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-RRbXMXapr3db{height:1px;max-width:145px;align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-NfvFjcJErM53{padding:20px 70px 50px 70px}div#n2-ss-3 .n-uc-t5whqgq8c8NJ-inner{padding:10px 10px 0px 10px;text-align:left;--ssselfalign:var(--ss-fs);;justify-content:flex-end}div#n2-ss-3 .n-uc-t5whqgq8c8NJ{align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-4f47KYQtsfKu{height:1px;max-width:145px;align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-C61S8iM79Qon{padding:20px 70px 50px 70px}div#n2-ss-3 .n-uc-QLlMquh4X30H-inner{padding:10px 10px 0px 10px;text-align:left;--ssselfalign:var(--ss-fs);;justify-content:flex-end}div#n2-ss-3 .n-uc-QLlMquh4X30H{align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-qlONNOc9WG6U{height:1px;max-width:145px;align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-rKCtD6Gs3taB{padding:20px 70px 50px 70px}div#n2-ss-3 .n-uc-WiBQrLDQE2YV-inner{padding:10px 10px 0px 10px;text-align:left;--ssselfalign:var(--ss-fs);;justify-content:flex-end}div#n2-ss-3 .n-uc-WiBQrLDQE2YV{align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-gFrgMG7fGOZ5{height:1px;max-width:145px;align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-6ZCEJBHnikpO{padding:20px 70px 50px 70px}div#n2-ss-3 .n-uc-q0CsQX5GpEed-inner{padding:10px 10px 0px 10px;text-align:left;--ssselfalign:var(--ss-fs);;justify-content:flex-end}div#n2-ss-3 .n-uc-q0CsQX5GpEed{align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-WAL1nphrdMH7{height:1px;max-width:145px;align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-yHI8CtBAyvFP{padding:20px 70px 50px 70px}div#n2-ss-3 .n-uc-UHIgvUFTl1Xd-inner{padding:10px 10px 0px 10px;text-align:left;--ssselfalign:var(--ss-fs);;justify-content:flex-end}div#n2-ss-3 .n-uc-UHIgvUFTl1Xd{align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-d9JvpIX4jegs{height:1px;max-width:145px;align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-rN3oNUCC23y9{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-J5Ic6fV07STx{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-hkLIfrNc92d4-inner{padding:10px 10px 0px 10px;text-align:left;--ssselfalign:var(--ss-fs);;justify-content:flex-end}div#n2-ss-3 .n-uc-hkLIfrNc92d4{align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-h83eog0CGxCl{--margin-top:5px;--margin-right:5px;--margin-bottom:5px;--margin-left:5px;height:1px;max-width:70px}div#n2-ss-3 .n-uc-SHbE1oLaBepd{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-tofymRNlVT4d-inner{padding:10px 10px 0px 10px;text-align:left;--ssselfalign:var(--ss-fs);;justify-content:flex-end}div#n2-ss-3 .n-uc-tofymRNlVT4d{align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-77LQcIUs07n8{--margin-right:-5px;height:1px;max-width:135px;align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-HHYazNDWgq5Z{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-6nFi5V3vSQRY-inner{padding:10px 10px 10px 10px;text-align:left;--ssselfalign:var(--ss-fs);;justify-content:flex-end}div#n2-ss-3 .n-uc-6nFi5V3vSQRY{align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-0EkNFyMU60QH{height:1px;align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-IcgRmKsbBBXD{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-ViiP7PReEy26-inner{padding:10px 10px 0px 10px;text-align:center;--ssselfalign:center;;justify-content:flex-end}div#n2-ss-3 .n-uc-ViiP7PReEy26{max-width: 1450px;align-self:var(--ss-fs);}div#n2-ss-3 .n-uc-uDz6ffFJboYw{height:1px;align-self:var(--ss-fs);}@media (min-width: 1200px){div#n2-ss-3 [data-hide-desktopportrait="1"]{display: none !important;}}@media (orientation: landscape) and (max-width: 1199px) and (min-width: 901px),(orientation: portrait) and (max-width: 1199px) and (min-width: 701px){div#n2-ss-3 .n-uc-mLZ4iXASMZ3i{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-FRoe4UxK38RO-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-M7oHOkioavNd{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-tP8zEuF5EE6R-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-UZALgTKKP0CU{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-u2nTbCWQzgVq-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-Rup0X1rDnEEc{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-9fw8VTdxtRK3-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-AIiEfNsukXBK{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-ytCpBeElevwQ{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-QAIBV8aHU5iz{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-cxBnJOv5kS6V-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-NfvFjcJErM53{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-t5whqgq8c8NJ-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-C61S8iM79Qon{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-QLlMquh4X30H-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-rKCtD6Gs3taB{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-WiBQrLDQE2YV-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-6ZCEJBHnikpO{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-q0CsQX5GpEed-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-yHI8CtBAyvFP{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-UHIgvUFTl1Xd-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-rN3oNUCC23y9{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-J5Ic6fV07STx{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-hkLIfrNc92d4-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-SHbE1oLaBepd{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-tofymRNlVT4d-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-HHYazNDWgq5Z{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-6nFi5V3vSQRY-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-IcgRmKsbBBXD{padding:20px 70px 60px 70px}div#n2-ss-3 .n-uc-ViiP7PReEy26-inner{padding:10px 10px 10px 10px}div#n2-ss-3 [data-hide-tabletportrait="1"]{display: none !important;}}@media (orientation: landscape) and (max-width: 900px),(orientation: portrait) and (max-width: 700px){div#n2-ss-3 .n-uc-mLZ4iXASMZ3i{padding:20px 10px 60px 10px}div#n2-ss-3 .n-uc-FRoe4UxK38RO-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-M7oHOkioavNd{padding:20px 10px 60px 10px}div#n2-ss-3 .n-uc-tP8zEuF5EE6R-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-UZALgTKKP0CU{padding:20px 10px 60px 10px}div#n2-ss-3 .n-uc-u2nTbCWQzgVq-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-Rup0X1rDnEEc{padding:20px 10px 60px 10px}div#n2-ss-3 .n-uc-9fw8VTdxtRK3-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-AIiEfNsukXBK{padding:20px 10px 60px 10px}div#n2-ss-3 .n-uc-ytCpBeElevwQ{padding:20px 10px 60px 10px}div#n2-ss-3 .n-uc-QAIBV8aHU5iz{padding:20px 10px 60px 10px}div#n2-ss-3 .n-uc-cxBnJOv5kS6V-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-NfvFjcJErM53{padding:20px 10px 60px 10px}div#n2-ss-3 .n-uc-t5whqgq8c8NJ-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-C61S8iM79Qon{padding:20px 10px 60px 10px}div#n2-ss-3 .n-uc-QLlMquh4X30H-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-rKCtD6Gs3taB{padding:20px 10px 60px 10px}div#n2-ss-3 .n-uc-WiBQrLDQE2YV-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-6ZCEJBHnikpO{padding:20px 10px 60px 10px}div#n2-ss-3 .n-uc-q0CsQX5GpEed-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-yHI8CtBAyvFP{padding:20px 10px 60px 10px}div#n2-ss-3 .n-uc-UHIgvUFTl1Xd-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-rN3oNUCC23y9{padding:20px 10px 60px 10px}div#n2-ss-3 .n-uc-J5Ic6fV07STx{padding:20px 10px 60px 10px}div#n2-ss-3 .n-uc-hkLIfrNc92d4-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-SHbE1oLaBepd{padding:20px 10px 60px 10px}div#n2-ss-3 .n-uc-tofymRNlVT4d-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-HHYazNDWgq5Z{padding:20px 10px 60px 10px}div#n2-ss-3 .n-uc-6nFi5V3vSQRY-inner{padding:10px 10px 10px 10px}div#n2-ss-3 .n-uc-IcgRmKsbBBXD{padding:20px 10px 60px 10px}div#n2-ss-3 .n-uc-ViiP7PReEy26-inner{padding:10px 10px 10px 10px}div#n2-ss-3 [data-hide-mobileportrait="1"]{display: none !important;}}</style>
+<script>(function(){this._N2=this._N2||{_r:[],_d:[],r:function(){this._r.push(arguments)},d:function(){this._d.push(arguments)}}}).call(window);!function(a){a.indexOf("Safari")>0&&-1===a.indexOf("Chrome")&&document.documentElement.style.setProperty("--ss-safari-fix-225962","1px")}(navigator.userAgent);</script><script src="/media/smartslider3/src/SmartSlider3/Application/Frontend/Assets/dist/n2.min.js?ver=cf72eab4" defer async></script>
+<script src="/media/smartslider3/src/SmartSlider3/Application/Frontend/Assets/dist/smartslider-frontend.min.js?ver=cf72eab4" defer async></script>
+<script src="/media/smartslider3/src/SmartSlider3/Slider/SliderType/Simple/Assets/dist/ss-simple.min.js?ver=cf72eab4" defer async></script>
+<script src="/media/smartslider3/src/SmartSlider3/Slider/SliderType/Simple/Assets/dist/smartslider-backgroundanimation.min.js?ver=cf72eab4" defer async></script>
+<script>_N2.r('documentReady',function(){_N2.r(["documentReady","smartslider-frontend","smartslider-backgroundanimation","ss-simple"],function(){new _N2.SmartSliderSimple('n2-ss-3',{"admin":false,"background.video.mobile":1,"loadingTime":2000,"callbacks":"","alias":{"id":0,"smoothScroll":0,"slideSwitch":0,"scroll":1},"align":"normal","isDelayed":0,"responsive":{"mediaQueries":{"all":false,"desktopportrait":["(min-width: 1200px)"],"tabletportrait":["(orientation: landscape) and (max-width: 1199px) and (min-width: 901px)","(orientation: portrait) and (max-width: 1199px) and (min-width: 701px)"],"mobileportrait":["(orientation: landscape) and (max-width: 900px)","(orientation: portrait) and (max-width: 700px)"]},"base":{"slideOuterWidth":1600,"slideOuterHeight":600,"sliderWidth":1600,"sliderHeight":600,"slideWidth":1600,"slideHeight":600},"hideOn":{"desktopLandscape":false,"desktopPortrait":false,"tabletLandscape":false,"tabletPortrait":false,"mobileLandscape":false,"mobilePortrait":false},"onResizeEnabled":true,"type":"fullwidth","sliderHeightBasedOn":"real","focusUser":1,"focusEdge":"auto","breakpoints":[{"device":"tabletPortrait","type":"max-screen-width","portraitWidth":1199,"landscapeWidth":1199},{"device":"mobilePortrait","type":"max-screen-width","portraitWidth":700,"landscapeWidth":900}],"enabledDevices":{"desktopLandscape":0,"desktopPortrait":1,"tabletLandscape":0,"tabletPortrait":1,"mobileLandscape":0,"mobilePortrait":1},"sizes":{"desktopPortrait":{"width":1600,"height":600,"max":3000,"min":1200},"tabletPortrait":{"width":701,"height":262,"customHeight":false,"max":1199,"min":701},"mobilePortrait":{"width":320,"height":120,"customHeight":false,"max":900,"min":320}},"overflowHiddenPage":0,"focus":{"offsetTop":"","offsetBottom":""}},"controls":{"mousewheel":0,"touch":"horizontal","keyboard":1,"blockCarouselInteraction":1},"playWhenVisible":1,"playWhenVisibleAt":0.5,"lazyLoad":0,"lazyLoadNeighbor":0,"blockrightclick":0,"maintainSession":0,"autoplay":{"enabled":1,"start":1,"duration":3000,"autoplayLoop":1,"allowReStart":0,"pause":{"click":1,"mouse":"0","mediaStarted":1},"resume":{"click":0,"mouse":"0","mediaEnded":1,"slidechanged":0},"interval":1,"intervalModifier":"loop","intervalSlide":"current"},"perspective":1500,"layerMode":{"playOnce":0,"playFirstLayer":1,"mode":"skippable","inAnimation":"mainInEnd"},"bgAnimations":{"global":[{"type":"Flat","tiles":{"crop":false,"delay":0,"sequence":"ForwardDiagonal"},"main":{"type":"both","duration":0.75,"current":{"ease":"easeOutCubic","scale":0.5,"opacity":0},"next":{"ease":"easeOutCubic","opacity":0,"scale":1.5}},"invert":{"current":{"scale":1.5},"next":{"scale":0.5}}},{"type":"Flat","rows":1,"columns":25,"tiles":{"delay":0.03,"sequence":"BackwardCol"},"main":{"type":"next","duration":0.35,"next":{"ease":"easeInQuart","opacity":"0","xP":-100}},"invert":{"next":{"xP":100}},"invertTiles":{"sequence":"ForwardCol"},"desktopOnly":true},{"type":"Flat","rows":5,"columns":7,"tiles":{"delay":1,"sequence":"Random"},"main":{"type":"next","duration":0.8,"next":{"ease":"easeInQuart","opacity":0}},"desktopOnly":true},{"type":"Flat","tiles":{"crop":false,"delay":0,"sequence":"ForwardDiagonal"},"main":{"type":"both","duration":0.75,"current":{"ease":"easeOutCubic","scale":1.5,"opacity":0},"next":{"ease":"easeOutCubic","opacity":0,"scale":0.5}},"invert":{"current":{"scale":0.5},"next":{"scale":1.5}}}],"color":"RGBA(51,51,51,1)","speed":"normal"},"mainanimation":{"type":"horizontal","duration":800,"delay":0,"ease":"easeOutQuad","shiftedBackgroundAnimation":0},"carousel":1,"initCallbacks":function(){}})})});</script></head>
+
+<body class="site-default navigation-default theme-default layout-home nav-breakpoint-lg navigation-hide com_content view-featured item-101" data-jver="4"><section class="djacc djacc-container djacc-popup djacc--hidden djacc--light djacc--sticky djacc--top-right">
+			<button class="djacc__openbtn djacc__openbtn--custom" aria-label="Open accessibility tools" title="Open accessibility tools">
+			<img src="/images/icons/accessibility-icon-64x64.png#joomlaImage://local-images/icons/accessibility-icon-64x64.png?width=64&height=64" alt="Open accessibility tools">
+		</button>
+		<div class="djacc__panel">
+		<div class="djacc__header">
+			<p class="djacc__title">Accessibility Tools</p>
+			<button class="djacc__reset" aria-label="Reset" title="Reset">
+				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+					<path d="M9,18a.75.75,0,0,1,0-1.5,7.5,7.5,0,1,0,0-15A7.531,7.531,0,0,0,2.507,5.25H3.75a.75.75,0,0,1,0,1.5h-3A.75.75,0,0,1,0,6V3A.75.75,0,0,1,1.5,3V4.019A9.089,9.089,0,0,1,2.636,2.636,9,9,0,0,1,15.364,15.365,8.94,8.94,0,0,1,9,18Z" fill="#fff"/>
+				</svg>
+			</button>
+			<button class="djacc__close" aria-label="Close accessibility tools" title="Close accessibility tools">
+				<svg xmlns="http://www.w3.org/2000/svg" width="14.828" height="14.828" viewBox="0 0 14.828 14.828">
+					<g transform="translate(-1842.883 -1004.883)">
+						<line x2="12" y2="12" transform="translate(1844.297 1006.297)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+						<line x1="12" y2="12" transform="translate(1844.297 1006.297)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+					</g>
+				</svg>
+			</button>
+		</div>
+		<ul class="djacc__list">
+			<li class="djacc__item djacc__item--contrast">
+				<button class="djacc__btn djacc__btn--invert-colors" title="Invert colors">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<g fill="none" stroke="#fff" stroke-width="2">
+							<circle cx="12" cy="12" r="12" stroke="none"/>
+							<circle cx="12" cy="12" r="11" fill="none"/>
+						</g>
+						<path d="M0,12A12,12,0,0,1,12,0V24A12,12,0,0,1,0,12Z" fill="#fff"/>
+					</svg>
+					<span class="djacc_btn-label">Invert colors</span>
+				</button>
+			</li>
+			<li class="djacc__item djacc__item--contrast">
+				<button class="djacc__btn djacc__btn--monochrome" title="Monochrome">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<g fill="none" stroke="#fff" stroke-width="2">
+							<circle cx="12" cy="12" r="12" stroke="none"/>
+							<circle cx="12" cy="12" r="11" fill="none"/>
+						</g>
+						<line y2="21" transform="translate(12 1.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+						<path d="M5.853,7.267a12.041,12.041,0,0,1,1.625-1.2l6.3,6.3v2.829Z" transform="translate(-0.778 -4.278)" fill="#fff"/>
+						<path d="M3.2,6.333A12.006,12.006,0,0,1,4.314,4.622l9.464,9.464v2.829Z" transform="translate(-0.778)" fill="#fff"/>
+						<path d="M1.823,10.959a11.953,11.953,0,0,1,.45-2.378l11.506,11.5v2.829Z" transform="translate(-0.778)" fill="#fff"/>
+					</svg>
+					<span class="djacc_btn-label">Monochrome</span>
+				</button>
+			</li>
+			<li class="djacc__item djacc__item--contrast">
+				<button class="djacc__btn djacc__btn--dark-contrast" title="Dark contrast">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<path d="M12,27A12,12,0,0,1,9.638,3.232a10,10,0,0,0,14.13,14.13A12,12,0,0,1,12,27Z" transform="translate(0 -3.232)" fill="#fff"/>
+					</svg>
+					<span class="djacc_btn-label">Dark contrast</span>
+				</button>
+			</li>
+			<li class="djacc__item djacc__item--contrast">
+				<button class="djacc__btn djacc__btn--light-contrast" title="Light contrast">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
+						<g transform="translate(7 7)" fill="none" stroke="#fff" stroke-width="2">
+							<circle cx="9" cy="9" r="9" stroke="none"/>
+							<circle cx="9" cy="9" r="8" fill="none"/>
+						</g>
+						<rect width="2" height="5" rx="1" transform="translate(15)" fill="#fff"/>
+						<rect width="2" height="5" rx="1" transform="translate(26.607 3.979) rotate(45)" fill="#fff"/>
+						<rect width="2" height="5" rx="1" transform="translate(32 15) rotate(90)" fill="#fff"/>
+						<rect width="2" height="5" rx="1" transform="translate(28.021 26.607) rotate(135)" fill="#fff"/>
+						<rect width="2" height="5" rx="1" transform="translate(15 27)" fill="#fff"/>
+						<rect width="2" height="5" rx="1" transform="translate(7.515 23.071) rotate(45)" fill="#fff"/>
+						<rect width="2" height="5" rx="1" transform="translate(5 15) rotate(90)" fill="#fff"/>
+						<rect width="2" height="5" rx="1" transform="translate(8.929 7.515) rotate(135)" fill="#fff"/>
+					</svg>
+					<span class="djacc_btn-label">Light contrast</span>
+				</button>
+			</li>
+			
+			<li class="djacc__item djacc__item--contrast">
+				<button class="djacc__btn djacc__btn--low-saturation" title="Low saturation">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<g fill="none" stroke="#fff" stroke-width="2">
+							<circle cx="12" cy="12" r="12" stroke="none"/>
+							<circle cx="12" cy="12" r="11" fill="none"/>
+						</g>
+						<path d="M0,12A12,12,0,0,1,6,1.6V22.394A12,12,0,0,1,0,12Z" transform="translate(0 24) rotate(-90)" fill="#fff"/>
+					</svg>
+					<span class="djacc_btn-label">Low saturation</span>
+				</button>
+			</li>
+			<li class="djacc__item djacc__item--contrast">
+				<button class="djacc__btn djacc__btn--high-saturation" title="High saturation">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<g fill="none" stroke="#fff" stroke-width="2">
+							<circle cx="12" cy="12" r="12" stroke="none"/>
+							<circle cx="12" cy="12" r="11" fill="none"/>
+						</g>
+						<path d="M0,12A12.006,12.006,0,0,1,17,1.088V22.911A12.006,12.006,0,0,1,0,12Z" transform="translate(0 24) rotate(-90)" fill="#fff"/>
+					</svg>
+					<span class="djacc_btn-label">High saturation</span>
+				</button>
+			</li>
+			<li class="djacc__item">
+				<button class="djacc__btn djacc__btn--highlight-links" title="Highlight links">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<rect width="24" height="24" fill="none"/>
+						<path d="M3.535,21.92a5.005,5.005,0,0,1,0-7.071L6.364,12.02a1,1,0,0,1,1.415,1.413L4.95,16.263a3,3,0,0,0,4.243,4.243l2.828-2.828h0a1,1,0,1,1,1.414,1.415L10.607,21.92a5,5,0,0,1-7.072,0Zm2.829-2.828a1,1,0,0,1,0-1.415L17.678,6.364a1,1,0,1,1,1.415,1.414L7.779,19.092a1,1,0,0,1-1.415,0Zm11.314-5.657a1,1,0,0,1,0-1.413l2.829-2.829A3,3,0,1,0,16.263,4.95L13.436,7.777h0a1,1,0,0,1-1.414-1.414l2.828-2.829a5,5,0,1,1,7.071,7.071l-2.828,2.828a1,1,0,0,1-1.415,0Z" transform="translate(-0.728 -0.728)" fill="#fff"/>
+					</svg>
+					<span class="djacc_btn-label">Highlight links</span>
+				</button>
+			</li>
+			<li class="djacc__item">
+				<button class="djacc__btn djacc__btn--highlight-titles" title="Highlight headings">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<rect width="2" height="14" rx="1" transform="translate(5 5)" fill="#fff"/>
+						<rect width="2" height="14" rx="1" transform="translate(10 5)" fill="#fff"/>
+						<rect width="2" height="14" rx="1" transform="translate(17 5)" fill="#fff"/>
+						<rect width="2" height="7" rx="1" transform="translate(12 11) rotate(90)" fill="#fff"/>
+						<rect width="2" height="5" rx="1" transform="translate(19 5) rotate(90)" fill="#fff"/>
+						<g fill="none" stroke="#fff" stroke-width="2">
+							<rect width="24" height="24" rx="4" stroke="none"/>
+							<rect x="1" y="1" width="22" height="22" rx="3" fill="none"/>
+						</g>
+					</svg>
+					<span class="djacc_btn-label">Highlight headings</span>
+				</button>
+			</li>
+			<li class="djacc__item">
+				<button class="djacc__btn djacc__btn--screen-reader" title="Screen reader">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<g fill="none" stroke="#fff" stroke-width="2">
+							<circle cx="12" cy="12" r="12" stroke="none"/>
+							<circle cx="12" cy="12" r="11" fill="none"/>
+						</g>
+						<path d="M2907.964,170h1.91l1.369-2.584,2.951,8.363,2.5-11.585L2919,170h2.132" transform="translate(-2902.548 -158)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+					</svg>
+					<span class="djacc_btn-label">Screen reader</span>
+				</button>
+			</li>
+			<li class="djacc__item">
+				<button class="djacc__btn djacc__btn--read-mode" title="Read mode" data-label="Disable Read mode">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<g fill="none" stroke="#fff" stroke-width="2">
+							<rect width="24" height="24" rx="4" stroke="none"/>
+							<rect x="1" y="1" width="22" height="22" rx="3" fill="none"/>
+						</g>
+						<rect width="14" height="2" rx="1" transform="translate(5 7)" fill="#fff"/>
+						<rect width="14" height="2" rx="1" transform="translate(5 11)" fill="#fff"/>
+						<rect width="7" height="2" rx="1" transform="translate(5 15)" fill="#fff"/>
+					</svg>
+					<span class="djacc_btn-label">Read mode</span>
+				</button>
+			</li>
+			<li class="djacc__item djacc__item--full">
+				<span class="djacc__arrows djacc__arrows--zoom">
+					<span class="djacc__label">Content scaling</span>
+					<span class="djacc__bar"></span>
+					<span class="djacc__size">100<span class="djacc__percent">%</span></span>
+					<button class="djacc__dec" aria-label="Decrease content size" title="Decrease content size">
+						<svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" viewBox="0 0 10 2">
+							<g transform="translate(1 1)">
+								<line x1="8" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+							</g>
+						</svg>
+					</button>
+					<button class="djacc__inc" aria-label="Increase content size" title="Increase content size">
+						<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+							<g transform="translate(1 1)">
+								<line y2="8" transform="translate(4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+								<line x1="8" transform="translate(0 4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+							</g>
+						</svg>
+					</button>
+				</span>
+			</li>
+			<li class="djacc__item djacc__item--full">
+				<span class="djacc__arrows djacc__arrows--font-size">
+					<span class="djacc__label">Font size</span>
+					<span class="djacc__bar"></span>
+					<span class="djacc__size">100<span class="djacc__percent">%</span></span>
+					<button class="djacc__dec" aria-label="Decrease font size" title="Decrease font size">
+						<svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" viewBox="0 0 10 2">
+							<g transform="translate(1 1)">
+								<line x1="8" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+							</g>
+						</svg>
+					</button>
+					<button class="djacc__inc" aria-label="Increase font size" title="Increase font size">
+						<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+							<g transform="translate(1 1)">
+								<line y2="8" transform="translate(4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+								<line x1="8" transform="translate(0 4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+							</g>
+						</svg>
+					</button>
+				</span>
+			</li>
+			<li class="djacc__item djacc__item--full">
+				<span class="djacc__arrows djacc__arrows--line-height">
+					<span class="djacc__label">Line height</span>
+					<span class="djacc__bar"></span>
+					<span class="djacc__size">100<span class="djacc__percent">%</span></span>
+					<button class="djacc__dec" aria-label="Decrease line height" title="Decrease line height">
+						<svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" viewBox="0 0 10 2">
+							<g transform="translate(1 1)">
+								<line x1="8" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+							</g>
+						</svg>
+					</button>
+					<button class="djacc__inc" aria-label="Increase line height" title="Increase line height">
+						<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+							<g transform="translate(1 1)">
+								<line y2="8" transform="translate(4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+								<line x1="8" transform="translate(0 4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+							</g>
+						</svg>
+					</button>
+				</span>
+			</li>
+			<li class="djacc__item djacc__item--full">
+				<span class="djacc__arrows djacc__arrows--letter-spacing">
+					<span class="djacc__label">Letter spacing</span>
+					<span class="djacc__bar"></span>
+					<span class="djacc__size">100<span class="djacc__percent">%</span></span>
+					<button class="djacc__dec" aria-label="Decrease letter space" title="Decrease letter space">
+						<svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" viewBox="0 0 10 2">
+							<g transform="translate(1 1)">
+								<line x1="8" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+							</g>
+						</svg>
+					</button>
+					<button class="djacc__inc" aria-label="Increase letter space" title="Increase letter space">
+						<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+							<g transform="translate(1 1)">
+								<line y2="8" transform="translate(4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+								<line x1="8" transform="translate(0 4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+							</g>
+						</svg>
+					</button>
+				</span>
+			</li>
+		</ul>
+	</div>
+</section>
+
+  
+  <div class="t4-offcanvas" data-offcanvas-options='{"modifiers":"right,overlay"}' id="off-canvas-right" role="complementary" style="display:none;">
+	<div class="t4-off-canvas-header">
+	 		  <a href="https://www.dbm.gov.ph/" title="Department of Budget and Management">
+	  	    	      <img class="logo-img-sm d-block d-sm-none" src="/images/icons/blue/dbm-logo-header.png" alt="Department of Budget and Management" />
+	    	  	
+	    	      <img class="logo-img d-none d-sm-block" src="/images/icons/blue/dbm-logo-header.png" alt="Department of Budget and Management" />
+	    
+	  	  </a>
+	  		<button type="button" class="close js-offcanvas-close" data-dismiss="modal" aria-hidden="true">×</button>
+	</div>
+
+	<div class="t4-off-canvas-body menu-item-def" data-effect="def">
+		<nav class="off-canvas card " aria-label="Main Menu">
+        <div class="card-body">
+                <nav class="navbar">
+<ul class="nav navbar-nav ">
+<li class="nav-item item-101 default current active"><a href="/index.php" itemprop="url" class="nav-link" aria-current="page"><span itemprop="name"><img src="/images/icons/blue/home.png" alt="Home" width="24" height="24" loading="lazy"></span></a></li><li class="nav-item item-108"><a href="/index.php/about-the-dbm" itemprop="url" class="nav-link"><span itemprop="name">About the DBM</span></a></li><li class="nav-item item-112"><a href="/index.php/the-secretary" itemprop="url" class="nav-link"><span itemprop="name">The Secretary</span></a></li><li class="nav-item item-109"><a href="/index.php/budget" itemprop="url" class="nav-link"><span itemprop="name">Budget</span></a></li><li class="nav-item item-126"><a href="/index.php/management" itemprop="url" class="nav-link"><span itemprop="name">Management</span></a></li><li class="nav-item item-190"><a href="/index.php/publications" itemprop="url" class="nav-link"><span itemprop="name">Publications</span></a></li><li class="nav-item item-160"><a href="/index.php/careers" itemprop="url" class="nav-link"><span itemprop="name">Careers</span></a></li><li class="nav-item item-337"><a href="/index.php/procurement" itemprop="url" class="nav-link"><span itemprop="name">Procurement</span></a></li><li class="nav-item item-110"><a href="/index.php/contact-us" itemprop="url" class="nav-link"><span itemprop="name">Contact Us</span></a></li><li class="nav-item item-706"><a href="#" itemprop="url" class=" nav-link"><span itemprop="name"><img src="/images/icons/blank-menu.jpg" alt="blank" width="73" height="32" loading="lazy"></span></a></li><li class="nav-item item-703"><a href="https://www.facebook.com/DBMgovph/" itemprop="url" class=" nav-link"><span itemprop="name"><img src="/images/icons/blue/fb-20px.png" alt="DBM Official Facebook Page" width="20" height="20" loading="lazy"></span></a></li><li class="nav-item item-704"><a href="https://twitter.com/DBMgovph" itemprop="url" class=" nav-link"><span itemprop="name"><img src="/images/icons/blue/twitter-20px.png" alt="DBM Official Twitter" width="20" height="20" loading="lazy"></span></a></li><li class="nav-item item-705"><a href="https://www.instagram%2Ccom/dbmgovph" itemprop="url" class=" nav-link"><span itemprop="name"><img src="/images/icons/blue/ig-20px.png" alt="DBM Official Instagram" width="20" height="20" loading="lazy"></span></a></li></ul></nav>    </div>
+</nav>
+
+	</div>
+
+	</div>
+
   <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
+    <div class="t4-wrapper">
+      <div class="t4-content">
+        <div class="t4-content-inner">
+          
+<div id="t4-section-1" class="t4-section  border-bottom  t4-palette-section_gray  t4-sticky"><div class="bg-overlay bg-overlay-image">&nbsp;</div>
+<div class="t4-section-inner container"><div class="t4-row row">
+<div class="t4-col header col-sm">
+<div class="t4-section-inner section"><div class="section-title-wrap text-left "><h3></h3><div class="sub-heading lead"></div></div><div class="section-ct">
 
+<div class="custom"  >
+	<p><a href="/index.php"><img style="float: left;" src="/images/icons/blue/dbm-logo-header.png" width="500" height="64" loading="lazy" data-path="local-images:/icons/blue/dbm-logo-header.png" /></a></p></div>
+</div></div>
+</div>
+<div class="t4-col search col-sm col-md-3">
+<div class="t4-section-inner section"><div class="section-title-wrap text-left "><h3></h3><div class="sub-heading lead"></div></div><div class="section-ct">
+<form class="mod-finder js-finder-searchform form-search" action="/index.php/component/finder/search?Itemid=116" method="get" role="search">
+    <label for="mod-finder-searchword150" class="visually-hidden finder">Search</label><input type="text" name="q" id="mod-finder-searchword150" class="js-finder-search-query form-control" value="" placeholder="Search &hellip;">
+            <input type="hidden" name="Itemid" value="116"></form>
+</div></div>
+</div>
+</div></div>
+</div>
+
+<div id="t4-header" class="t4-section  t4-header  border-bottom  t4-palette-section_gray  t4-sticky">
+<div class="t4-section-inner container"><div class="t4-navbar">
+  
+<nav class="navbar navbar-expand-lg">
+<div id="t4-megamenu-mainmenu" class="t4-megamenu collapse navbar-collapse slide animate" data-duration="400">
+
+<ul class="nav navbar-nav level0"  itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+<li class="nav-item default current active" data-id="101" data-level="1"><a href="/index.php" itemprop="url" class="nav-link" aria-current="page"><span itemprop="name"><img src="/images/icons/blue/home.png" alt="Home" width="24" height="24" loading="lazy"></span></a></li><li class="nav-item" data-id="108" data-level="1"><a href="/index.php/about-the-dbm" itemprop="url" class="nav-link"><span itemprop="name">About the DBM</span></a></li><li class="nav-item" data-id="112" data-level="1"><a href="/index.php/the-secretary" itemprop="url" class="nav-link"><span itemprop="name">The Secretary</span></a></li><li class="nav-item" data-id="109" data-level="1"><a href="/index.php/budget" itemprop="url" class="nav-link"><span itemprop="name">Budget</span></a></li><li class="nav-item" data-id="126" data-level="1"><a href="/index.php/management" itemprop="url" class="nav-link"><span itemprop="name">Management</span></a></li><li class="nav-item" data-id="190" data-level="1"><a href="/index.php/publications" itemprop="url" class="nav-link"><span itemprop="name">Publications</span></a></li><li class="nav-item" data-id="160" data-level="1"><a href="/index.php/careers" itemprop="url" class="nav-link"><span itemprop="name">Careers</span></a></li><li class="nav-item" data-id="337" data-level="1"><a href="/index.php/procurement" itemprop="url" class="nav-link"><span itemprop="name">Procurement</span></a></li><li class="nav-item" data-id="110" data-level="1"><a href="/index.php/contact-us" itemprop="url" class="nav-link"><span itemprop="name">Contact Us</span></a></li><li class="nav-item" data-id="706" data-level="1"><a href="#" itemprop="url" class=" nav-link"><span itemprop="name"><img src="/images/icons/blank-menu.jpg" alt="blank" width="73" height="32" loading="lazy"></span></a></li><li class="nav-item" data-id="703" data-level="1"><a href="https://www.facebook.com/DBMgovph/" itemprop="url" class=" nav-link"><span itemprop="name"><img src="/images/icons/blue/fb-20px.png" alt="DBM Official Facebook Page" width="20" height="20" loading="lazy"></span></a></li><li class="nav-item" data-id="704" data-level="1"><a href="https://twitter.com/DBMgovph" itemprop="url" class=" nav-link"><span itemprop="name"><img src="/images/icons/blue/twitter-20px.png" alt="DBM Official Twitter" width="20" height="20" loading="lazy"></span></a></li><li class="nav-item" data-id="705" data-level="1"><a href="https://www.instagram%2Ccom/dbmgovph" itemprop="url" class=" nav-link"><span itemprop="name"><img src="/images/icons/blue/ig-20px.png" alt="DBM Official Instagram" width="20" height="20" loading="lazy"></span></a></li></ul></div>
+</nav>
+
+  <span id="triggerButton" class="btn js-offcanvas-trigger t4-offcanvas-toggle d-lg-none" data-offcanvas-trigger="off-canvas-right"><i class="fa fa-bars toggle-bars"></i></span>
+</div></div>
+</div>
+
+<div id="t4-section-2" class="t4-section  t4-palette-mainnav">
+<div class="t4-section-inner container"><div class="t4-row row">
+<div class="t4-col dbm-slider col-sm">
+<div data-bg-color="bg-default" class="t4-mod-wrap   top-large bottom-large color-dark-active" id="Mod156"><div class="section-inner"><div class="section-ct"><div><div class="n2-section-smartslider fitvidsignore  n2_clear" data-ssid="3" tabindex="0" role="region" aria-label="Slider"><div id="n2-ss-3-align" class="n2-ss-align"><div class="n2-padding"><div id="n2-ss-3" data-creator="Smart Slider 3" data-responsive="fullwidth" class="n2-ss-slider n2-ow n2-has-hover n2notransition  ">
+        <div class="n2-ss-slider-1 n2_ss__touch_element n2-ow">
+            <div class="n2-ss-slider-2 n2-ow">
+                                                    <div class="n2-ss-background-animation n2-ow"></div>
+                                <div class="n2-ss-slider-3 n2-ow">
+
+                    <div class="n2-ss-slide-backgrounds n2-ow-all"><div class="n2-ss-slide-background" data-public-id="1" data-mode="fill"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><img src="/images/slider/cache/20d08261b22035ec469c02f7d7bca53e/National Budget Circular.jpg" alt="" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div><div class="n2-ss-slide-background" data-public-id="2" data-mode="fill"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><img src="/images/slider/cache/49753061c47fdeaee19ad15e0de77798/Local Budget Circular.jpg" alt="" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div><div class="n2-ss-slide-background" data-public-id="3" data-mode="fill"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><img src="/images/slider/cache/52eb0f47f5b9740130b1bb8fe6bf9b67/2025-The-President39s-Budget-Message_Web-Slider.jpg" alt="" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div><div class="n2-ss-slide-background" data-public-id="4" data-mode="fill"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><img src="/images/slider/cache/67f3cd7d02b2081c1b51ecae91f211fb/2025NationalExpenditureProgram_WebSlider.jpg" alt="" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div><div class="n2-ss-slide-background" data-public-id="5" data-mode="stretch"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><img src="/images/slider/cache/ebaac5b810deba391541bece19013b74/NDRM2024.png" alt="" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div><div class="n2-ss-slide-background" data-public-id="6" data-mode="stretch"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><img src="/images/slider/cache/dfe9971241482755b4adc3f53bc096ec/NM2024.png" alt="" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div><div class="n2-ss-slide-background" data-public-id="7" data-mode="fill"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><img src="/images/slider/cache/42ea94128328887f47eceae6f010d1dd/ggg.png" alt="" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div><div class="n2-ss-slide-background" data-public-id="8" data-mode="fill"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><img src="/images/slider/cache/aec7b453f68be46d3f59728e4922b75a/2023AnnualReportSlider.png" alt="" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div><div class="n2-ss-slide-background" data-public-id="9" data-mode="fill"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><img src="/images/slider/cache/e16bdfc8989e7bdf6a69066e5e740dd9/nep-dashboard-slider.png" alt="" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div><div class="n2-ss-slide-background" data-public-id="10" data-mode="fill"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><img src="//www.dbm.gov.ph/images/DBCC%20Legacy%20Book%20Website%20Banner.png" alt="" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div><div class="n2-ss-slide-background" data-public-id="11" data-mode="fill"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><img src="/images/slider/cache/9881d62faa59ca00afb6804829cf65ed/2025-Budget-Priorities-Framework-Expenditures.jpg" alt="" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div><div class="n2-ss-slide-background" data-public-id="12" data-mode="fill"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><img src="/images/slider/cache/c25264213ec97e7099c855d429406bd7/Book of Speeches_Slider.jpg" alt="" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div><div class="n2-ss-slide-background" data-public-id="13" data-mode="fill"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><img src="/images/slider/cache/084a89260324b2b1b27b41f63944453e/slider-speech-un2024.jpg" alt="" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div><div class="n2-ss-slide-background" data-public-id="14" data-mode="fill"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><img src="/images/slider/cache/6819fd6d2d74806d78e89befe473d60e/Back-in-Time-Slider.png" alt="" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div><div class="n2-ss-slide-background" data-public-id="15" data-mode="fill"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><img src="/images/FY-2024-NEP-slider.png" alt="" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div><div class="n2-ss-slide-background" data-public-id="16" data-mode="fill"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><img src="/images/nep2024turnover.jpeg" alt="" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div><div class="n2-ss-slide-background" data-public-id="17" data-mode="fill"><div class="n2-ss-slide-background-image" data-blur="0" data-opacity="100" data-x="50" data-y="50" data-alt="" data-title=""><picture class="skip-lazy" data-skip-lazy="1"><img src="/images/BPF-SLIDER-2024.jpeg" alt="" title="" loading="lazy" class="skip-lazy" data-skip-lazy="1"></picture></div><div data-color="RGBA(255,255,255,0)" style="background-color: RGBA(255,255,255,0);" class="n2-ss-slide-background-color"></div></div></div>                    <div class="n2-ss-slider-4 n2-ow">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" data-related-device="desktopPortrait" class="n2-ow n2-ss-preserve-size n2-ss-preserve-size--slider n2-ss-slide-limiter"></svg><div data-first="1" data-slide-duration="0" data-id="65" data-slide-public-id="1" data-title="National Budget Circular No. 594" data-haslink="1" data-href="https://www.dbm.gov.ph/index.php/2025/2025-presidents-budget-message" tabindex="0" role="button" data-n2click="url" data-force-pointer="" class="n2-ss-slide n2-ow  n2-ss-slide-65"><div role="note" class="n2-ss-slide--focus">National Budget Circular No. 594</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-mLZ4iXASMZ3i" data-sstype="slide" data-pm="default"><div class="n2-ss-layer n2-ow n-uc-FRoe4UxK38RO" data-pm="default" data-sstype="content" data-hasbackground="0"><div class="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-FRoe4UxK38RO-inner"><div class="n2-ss-layer n2-ow n-uc-CW8XJZjIq9gC n2-ss-layer--auto" data-pm="normal" data-sstype="layer"><div class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-48ca96ad9a7eace257d537a7f255a795-link  n2-ss-nowrap n2-ss-button-container--non-full-width"><a class="n2-style-fd38549eee9ab23b7211fa4859786f10-heading  n2-ow " href="https://www.dbm.gov.ph/index.php?view=article&amp;id=2926:national-budget-circular-no-594&amp;catid=334"><div><div>READ MORE</div></div></a></div></div></div></div></div></div></div><div data-slide-duration="0" data-id="64" data-slide-public-id="2" data-title="Local Budget Circular No. 160" data-haslink="1" data-href="https://www.dbm.gov.ph/index.php?view=article&amp;id=2927:local-budget-circular-no-160&amp;catid=338" tabindex="0" role="button" data-n2click="url" data-force-pointer="" class="n2-ss-slide n2-ow  n2-ss-slide-64"><div role="note" class="n2-ss-slide--focus">Local Budget Circular No. 160</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-M7oHOkioavNd" data-sstype="slide" data-pm="default"><div class="n2-ss-layer n2-ow n-uc-tP8zEuF5EE6R" data-pm="default" data-sstype="content" data-hasbackground="0"><div class="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-tP8zEuF5EE6R-inner"><div class="n2-ss-layer n2-ow n-uc-Ctfd88EFg9xS n2-ss-layer--auto" data-pm="normal" data-sstype="layer"><div class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-48ca96ad9a7eace257d537a7f255a795-link  n2-ss-nowrap n2-ss-button-container--non-full-width"><a class="n2-style-fd38549eee9ab23b7211fa4859786f10-heading  n2-ow " href="https://www.dbm.gov.ph/index.php?view=article&amp;id=2927:local-budget-circular-no-160&amp;catid=338"><div><div>READ MORE</div></div></a></div></div></div></div></div></div></div><div data-slide-duration="0" data-id="59" data-slide-public-id="3" data-title="2025 President's Budget Message" data-haslink="1" data-href="https://www.dbm.gov.ph/index.php/2025/2025-presidents-budget-message" tabindex="0" role="button" data-n2click="url" data-force-pointer="" class="n2-ss-slide n2-ow  n2-ss-slide-59"><div role="note" class="n2-ss-slide--focus">2025 President's Budget Message</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-UZALgTKKP0CU" data-sstype="slide" data-pm="default"><div class="n2-ss-layer n2-ow n-uc-u2nTbCWQzgVq" data-pm="default" data-sstype="content" data-hasbackground="0"><div class="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-u2nTbCWQzgVq-inner"><div class="n2-ss-layer n2-ow n-uc-POU3LuSBRVfD n2-ss-layer--auto" data-pm="normal" data-sstype="layer"><div class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-48ca96ad9a7eace257d537a7f255a795-link  n2-ss-nowrap n2-ss-button-container--non-full-width"><a class="n2-style-fd38549eee9ab23b7211fa4859786f10-heading  n2-ow " href="https://www.dbm.gov.ph/index.php/2025/2025-presidents-budget-message"><div><div>READ MORE</div></div></a></div></div></div></div></div></div></div><div data-slide-duration="0" data-id="63" data-slide-public-id="4" data-title="2025 National Expenditure Program" data-haslink="1" data-href="https://www.dbm.gov.ph/index.php/2025/national-expenditure-program-fy-2025" tabindex="0" role="button" data-n2click="url" data-force-pointer="" class="n2-ss-slide n2-ow  n2-ss-slide-63"><div role="note" class="n2-ss-slide--focus">2025 National Expenditure Program</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-Rup0X1rDnEEc" data-sstype="slide" data-pm="default"><div class="n2-ss-layer n2-ow n-uc-9fw8VTdxtRK3" data-pm="default" data-sstype="content" data-hasbackground="0"><div class="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-9fw8VTdxtRK3-inner"><div class="n2-ss-layer n2-ow n-uc-e8VWzyvIYUQ9 n2-ss-layer--auto" data-pm="normal" data-sstype="layer"><div class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-48ca96ad9a7eace257d537a7f255a795-link  n2-ss-nowrap n2-ss-button-container--non-full-width"><a class="n2-style-fd38549eee9ab23b7211fa4859786f10-heading  n2-ow " href="https://www.dbm.gov.ph/index.php/2025/national-expenditure-program-fy-2025"><div><div>READ MORE</div></div></a></div></div></div></div></div></div></div><div data-slide-duration="0" data-id="60" data-slide-public-id="5" data-title="National Disaster Resilience Month 2024" class="n2-ss-slide n2-ow  n2-ss-slide-60"><div role="note" class="n2-ss-slide--focus" tabindex="-1">National Disaster Resilience Month 2024</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-AIiEfNsukXBK" data-sstype="slide" data-pm="default"></div></div></div><div data-slide-duration="0" data-id="61" data-slide-public-id="6" data-title="Nutrition Month 2024" class="n2-ss-slide n2-ow  n2-ss-slide-61"><div role="note" class="n2-ss-slide--focus" tabindex="-1">Nutrition Month 2024</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-ytCpBeElevwQ" data-sstype="slide" data-pm="default"></div></div></div><div data-slide-duration="0" data-id="58" data-slide-public-id="7" data-title="LGSF Green Green Green" class="n2-ss-slide n2-ow  n2-ss-slide-58"><div role="note" class="n2-ss-slide--focus" tabindex="-1">LGSF Green Green Green</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-QAIBV8aHU5iz" data-sstype="slide" data-pm="default"><div class="n2-ss-layer n2-ow n-uc-cxBnJOv5kS6V" data-pm="default" data-sstype="content" data-hasbackground="0"><div class="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-cxBnJOv5kS6V-inner"><div class="n2-ss-layer n2-ow n-uc-RRbXMXapr3db n2-ss-layer--auto" data-pm="normal" data-sstype="layer"><div class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-48ca96ad9a7eace257d537a7f255a795-link  n2-ss-nowrap n2-ss-button-container--non-full-width"><a class="n2-style-fd38549eee9ab23b7211fa4859786f10-heading  n2-ow " href="https://www.dbm.gov.ph/index.php/local-government-support-funds-lgsf-green-green-green"><div><div>VIEW</div></div></a></div></div></div></div></div></div></div><div data-slide-duration="0" data-id="62" data-slide-public-id="8" data-title="2023 Annual Report" class="n2-ss-slide n2-ow  n2-ss-slide-62"><div role="note" class="n2-ss-slide--focus" tabindex="-1">2023 Annual Report</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-NfvFjcJErM53" data-sstype="slide" data-pm="default"><div class="n2-ss-layer n2-ow n-uc-t5whqgq8c8NJ" data-pm="default" data-sstype="content" data-hasbackground="0"><div class="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-t5whqgq8c8NJ-inner"><div class="n2-ss-layer n2-ow n-uc-4f47KYQtsfKu n2-ss-layer--auto" data-pm="normal" data-sstype="layer"><div class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-48ca96ad9a7eace257d537a7f255a795-link  n2-ss-nowrap n2-ss-button-container--non-full-width"><a class="n2-style-fd38549eee9ab23b7211fa4859786f10-heading  n2-ow " href="https://www.dbm.gov.ph/wp-content/uploads/Reports/DBM-2023-Annual-Report.pdf"><div><div>READ MORE</div></div></a></div></div></div></div></div></div></div><div data-slide-duration="0" data-id="57" data-slide-public-id="9" data-title="NEP Dashboard" class="n2-ss-slide n2-ow  n2-ss-slide-57"><div role="note" class="n2-ss-slide--focus" tabindex="-1">NEP Dashboard</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-C61S8iM79Qon" data-sstype="slide" data-pm="default"><div class="n2-ss-layer n2-ow n-uc-QLlMquh4X30H" data-pm="default" data-sstype="content" data-hasbackground="0"><div class="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-QLlMquh4X30H-inner"><div class="n2-ss-layer n2-ow n-uc-qlONNOc9WG6U n2-ss-layer--auto" data-pm="normal" data-sstype="layer"><div class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-48ca96ad9a7eace257d537a7f255a795-link  n2-ss-nowrap n2-ss-button-container--non-full-width"><a class="n2-style-fd38549eee9ab23b7211fa4859786f10-heading  n2-ow " href="https://www.dbm.gov.ph/index.php/national-expenditure-programs-nep"><div><div>READ MORE</div></div></a></div></div></div></div></div></div></div><div data-slide-duration="0" data-id="53" data-slide-public-id="10" data-title="DBCC 50 Years" class="n2-ss-slide n2-ow  n2-ss-slide-53"><div role="note" class="n2-ss-slide--focus" tabindex="-1">DBCC 50 Years</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-rKCtD6Gs3taB" data-sstype="slide" data-pm="default"><div class="n2-ss-layer n2-ow n-uc-WiBQrLDQE2YV" data-pm="default" data-sstype="content" data-hasbackground="0"><div class="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-WiBQrLDQE2YV-inner"><div class="n2-ss-layer n2-ow n-uc-gFrgMG7fGOZ5 n2-ss-layer--auto" data-pm="normal" data-sstype="layer"><div class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-48ca96ad9a7eace257d537a7f255a795-link  n2-ss-nowrap n2-ss-button-container--non-full-width"><a class="n2-style-fd38549eee9ab23b7211fa4859786f10-heading  n2-ow " href="https://www.dbm.gov.ph/index.php/publications-dbcc/50yearsbook"><div><div>READ MORE</div></div></a></div></div></div></div></div></div></div><div data-slide-duration="0" data-id="51" data-slide-public-id="11" data-title="NEP 2024 Turnover" class="n2-ss-slide n2-ow  n2-ss-slide-51"><div role="note" class="n2-ss-slide--focus" tabindex="-1">NEP 2024 Turnover</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-6ZCEJBHnikpO" data-sstype="slide" data-pm="default"><div class="n2-ss-layer n2-ow n-uc-q0CsQX5GpEed" data-pm="default" data-sstype="content" data-hasbackground="0"><div class="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-q0CsQX5GpEed-inner"><div class="n2-ss-layer n2-ow n-uc-WAL1nphrdMH7 n2-ss-layer--auto" data-pm="normal" data-sstype="layer"><div class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-48ca96ad9a7eace257d537a7f255a795-link  n2-ss-nowrap n2-ss-button-container--non-full-width"><a class="n2-style-fd38549eee9ab23b7211fa4859786f10-heading  n2-ow " href="https://www.dbm.gov.ph/index.php/2025/2025-budget-priorities-framework-expenditure-priorities"><div><div>READ MORE</div></div></a></div></div></div></div></div></div></div><div data-slide-duration="0" data-id="52" data-slide-public-id="12" data-title="NEP 2024 Turnover" class="n2-ss-slide n2-ow  n2-ss-slide-52"><div role="note" class="n2-ss-slide--focus" tabindex="-1">NEP 2024 Turnover</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-yHI8CtBAyvFP" data-sstype="slide" data-pm="default"><div class="n2-ss-layer n2-ow n-uc-UHIgvUFTl1Xd" data-pm="default" data-sstype="content" data-hasbackground="0"><div class="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-UHIgvUFTl1Xd-inner"><div class="n2-ss-layer n2-ow n-uc-d9JvpIX4jegs n2-ss-layer--auto" data-pm="normal" data-sstype="layer"><div class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-48ca96ad9a7eace257d537a7f255a795-link  n2-ss-nowrap n2-ss-button-container--non-full-width"><a class="n2-style-fd38549eee9ab23b7211fa4859786f10-heading  n2-ow " href="https://www.dbm.gov.ph/index.php/book-of-speeches"><div><div>READ MORE</div></div></a></div></div></div></div></div></div></div><div data-slide-duration="0" data-id="49" data-slide-public-id="13" data-title="68th session of the un" data-haslink="1" data-href="https://www.dbm.gov.ph/index.php/speeches" tabindex="0" role="button" data-n2click="url" data-force-pointer="" class="n2-ss-slide n2-ow  n2-ss-slide-49"><div role="note" class="n2-ss-slide--focus">68th session of the un</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-rN3oNUCC23y9" data-sstype="slide" data-pm="default"></div></div></div><div data-slide-duration="0" data-id="47" data-slide-public-id="14" data-title="2022 People's Implemented Budget" class="n2-ss-slide n2-ow  n2-ss-slide-47"><div role="note" class="n2-ss-slide--focus" tabindex="-1">2022 People's Implemented Budget</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-J5Ic6fV07STx" data-sstype="slide" data-pm="default"><div class="n2-ss-layer n2-ow n-uc-hkLIfrNc92d4" data-pm="default" data-sstype="content" data-hasbackground="0"><div class="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-hkLIfrNc92d4-inner"><div class="n2-ss-layer n2-ow n-uc-h83eog0CGxCl n2-ss-layer--auto" data-pm="normal" data-sstype="layer"><div class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-b22b6590b1d0109a3ac8466f5692b0e6-link  n2-ss-nowrap n2-ss-button-container--non-full-width"><a class="n2-style-fd38549eee9ab23b7211fa4859786f10-heading  n2-ow " href="https://www.dbm.gov.ph/index.php/back-in-time-through-the-dbm-librarys-photo-archives"><div><div>VIEW</div></div></a></div></div></div></div></div></div></div><div data-slide-duration="0" data-id="46" data-slide-public-id="15" data-title="NEP 2024 Turnover" class="n2-ss-slide n2-ow  n2-ss-slide-46"><div role="note" class="n2-ss-slide--focus" tabindex="-1">NEP 2024 Turnover</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-SHbE1oLaBepd" data-sstype="slide" data-pm="default"><div class="n2-ss-layer n2-ow n-uc-tofymRNlVT4d" data-pm="default" data-sstype="content" data-hasbackground="0"><div class="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-tofymRNlVT4d-inner"><div class="n2-ss-layer n2-ow n-uc-77LQcIUs07n8 n2-ss-layer--auto" data-pm="normal" data-sstype="layer"><div class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-b22b6590b1d0109a3ac8466f5692b0e6-link  n2-ss-nowrap n2-ss-button-container--non-full-width"><a class="n2-style-fd38549eee9ab23b7211fa4859786f10-heading  n2-ow " href="https://www.dbm.gov.ph/index.php/the-secretary-2/speeches/1107-agenda-for-prosperity-securing-a-future-proof-and-sustainable-economy?highlight=WyJhZ2VuZGEiXQ=="><div><div>READ MORE</div></div></a></div></div></div></div></div></div></div><div data-slide-duration="0" data-id="27" data-slide-public-id="16" data-title="NEP 2024 Turnover" class="n2-ss-slide n2-ow  n2-ss-slide-27"><div role="note" class="n2-ss-slide--focus" tabindex="-1">NEP 2024 Turnover</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-HHYazNDWgq5Z" data-sstype="slide" data-pm="default"><div class="n2-ss-layer n2-ow n-uc-6nFi5V3vSQRY" data-pm="default" data-sstype="content" data-hasbackground="0"><div class="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-6nFi5V3vSQRY-inner"><div class="n2-ss-layer n2-ow n-uc-0EkNFyMU60QH n2-ss-layer--auto" data-pm="normal" data-sstype="layer"><div class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-48ca96ad9a7eace257d537a7f255a795-link  n2-ss-nowrap n2-ss-button-container--non-full-width"><a class="n2-style-fd38549eee9ab23b7211fa4859786f10-heading  n2-ow " href="https://www.dbm.gov.ph/index.php/management-2/220-dbm-turns-over-2024-nep-to-pbbm-a-day-after-the-sona?highlight=WyJ0dXJucyJd"><div><div>READ MORE</div></div></a></div></div></div></div></div></div></div><div data-slide-duration="0" data-id="25" data-slide-public-id="17" data-title="Slide 1" class="n2-ss-slide n2-ow  n2-ss-slide-25"><div role="note" class="n2-ss-slide--focus" tabindex="-1">Slide 1</div><div class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"><div class="n2-ss-layer n2-ow n-uc-IcgRmKsbBBXD" data-sstype="slide" data-pm="default"><div class="n2-ss-layer n2-ow n-uc-ViiP7PReEy26" data-pm="default" data-sstype="content" data-hasbackground="0"><div class="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-ViiP7PReEy26-inner"><div class="n2-ss-layer n2-ow n-uc-uDz6ffFJboYw n2-ss-layer--auto" data-pm="normal" data-sstype="layer"><div class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-176464dee0eea5b1ac11b21dab9b24d2-link  n2-ss-nowrap n2-ss-button-container--non-full-width"><a class="n2-style-fd38549eee9ab23b7211fa4859786f10-heading  n2-ow " href="https://www.dbm.gov.ph/index.php/budget-documents/2024/2024-budget-priorities-framework-expenditure-priorities"><div><div>Read More</div></div></a></div></div></div></div></div></div></div>                    </div>
+
+                                    </div>
+            </div>
+        </div>
+        </div><ss3-loader></ss3-loader></div></div><div class="n2_clear"></div></div></div></div><div class="text-uppercase mb-5 mb-lg-0 d-none"></div></div></div>
+</div>
+<div class="t4-col transparency-seal-logo col-sm col-md-4">
+<div class="t4-section-inner section"><div class="section-title-wrap text-left "><h3></h3><div class="sub-heading lead"></div></div><div class="section-ct">
+
+<div class="custom"  >
+	<p style="text-align: center;"><span style="font-size: 16px;"><a title="Bagong Pilipinas" href="https://www.officialgazette.gov.ph/" target="_blank" rel="noopener"><img src="/images/icons/Bagong_Pilipinas_logo.png" alt="Bagong Pilipinas Logo" width="54" height="54" loading="lazy" data-path="local-images:/icons/Bagong_Pilipinas_logo.png" /></a><a title="Transparency Seal" href="/index.php/compliance-with-good-governance-conditions">  <img src="/images/icons/transparencyseal-2023.png" alt="Transparency Seal Logo" width="54" height="54" loading="lazy" data-path="local-images:/icons/transparencyseal-2023.png" /></a>  <a title="Freedom of Information" href="https://www.foi.gov.ph/requests?agency=DBM"><img src="/images/icons/foi-logo-2023.png" alt="Freedom of Information Logo" width="54" height="54" loading="lazy" data-path="local-images:/icons/foi-logo-2023.png" /></a> <a title="NPC Certificate of Registration" href="/images/pdffiles/NPC%20CERTIFICATE%20OF%20REGISTRATION.pdf"><img src="/images/npc-registration-seal-logo.png" alt="" width="48" height="48" loading="lazy" data-path="local-images:/npc-registration-seal-logo.png" /></a></span></p>
+<p style="text-align: justify;"><span style="color: #000000; font-size: 12px;">The Department of Budget and Management, created under Executive Order No. 25 dated April 25, 1936, is mandated under this Order and by subsequent issuances to promote the sound, efficient and effective management and utilization of government resources (i.e., technological, manpower, physical and financial) as an instrument in the achievement of national socioeconomic and political development goals. </span></p></div>
+</div></div>
+</div>
+</div></div>
+</div>
+
+<div id="t4-section-3" class="t4-section  border-bottom  t4-palette-mainnav">
+<div class="t4-section-inner container"><div class="t4-row row">
+
+<div class="t4-col video-modal col-sm">
+<div class="t4-section-inner section"><div class="section-title-wrap text-left "><h3></h3><div class="sub-heading lead"></div></div><div class="section-ct">
+
+<div class="custom"  >
+	<p style="text-align: center;"><!-- START: Modals --><a data-modals href="https://www.dbm.gov.ph/images/videos/NEP-2025.mp4" data-modals-height="100%" data-modals-theme="dark" data-modals-width="100%"><img src="/images/FY%202025%20NEP%20VIDEO%20THUMBNAIL.jpg" width="1800" height="1012" loading="lazy" data-path="local-images:/FY 2025 NEP VIDEO THUMBNAIL.jpg" /></a><!-- END: Modals --></p></div>
+</div></div>
+</div>
+
+</div></div>
+</div>
+
+<div id="t4-section-4" class="t4-section  border-bottom  t4-palette-mainnav">
+<div class="t4-section-inner container"><div class="t4-row row">
+<div class="t4-col fy-2025-module-label col-sm col-md-4">
+<div class="t4-section-inner section"><div class="section-title-wrap text-left "><h3></h3><div class="sub-heading lead"></div></div><div class="section-ct">
+
+<div class="custom"  >
+	<p><img src="/images/fy-2025-module-label.jpg" width="513" height="254" loading="lazy" data-path="local-images:/fy-2025-module-label.jpg" /></p></div>
+</div></div>
+</div>
+<div class="t4-col fy-2025-budget-documents col-sm">
+<div class="t4-section-inner section"><div class="section-title-wrap text-left "><h3></h3><div class="sub-heading lead"></div></div><div class="section-ct"><div class="jtcs_item_wrapper jt-cs" style="padding:10px 10px 10px 10px;">
+<div class="jtcs346 positioncenter owl-carousel owl-carousel owl-theme slides_container">
+			 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="0">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+					
+				<a class="link-image" title="2025 President's Budget Message" href="/index.php/2025/2025-presidents-budget-message"><img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/a8230581b5b372ce2eef6308e496588f_2900.jpg" width="120" alt="2025 President's Budget Message" /></a>
+									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="2025 President's Budget Message" href="/index.php/2025/2025-presidents-budget-message"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/2025-The President-Budget-Message.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+																				<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="1">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+					
+				<a class="link-image" title="2025 People's Budget" href="/index.php/2025/2025-peoples-budget"><img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/a8230581b5b372ce2eef6308e496588f_2904.jpg" width="120" alt="2025 People's Budget" /></a>
+									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="2025 People's Budget" href="/index.php/2025/2025-peoples-budget"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/FY 2025 Budget-at-a-Glance_001.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+																				<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="2">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+					
+				<a class="link-image" title="Staffing Summary 2025" href="/index.php/2025/staffing-summary-2025"><img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/a8230581b5b372ce2eef6308e496588f_2894.jpg" width="120" alt="Staffing Summary 2025" /></a>
+									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Staffing Summary 2025" href="/index.php/2025/staffing-summary-2025"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/STAFFING-SUMMARY-2025.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+																				<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="3">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+					
+				<a class="link-image" title="Budget of Expenditures and Sources of Financing FY 2025" href="/index.php/2025/budget-of-expenditures-and-sources-of-financing-fy-2025"><img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/a8230581b5b372ce2eef6308e496588f_2895.jpg" width="120" alt="Budget of Expenditures and Sources of Financing FY 2025" /></a>
+									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Budget of Expenditures and Sources of Financing FY 2025" href="/index.php/2025/budget-of-expenditures-and-sources-of-financing-fy-2025"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/2025_NEP_COVER_BESF_TABLES.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+																				<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="4">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+					
+				<a class="link-image" title="National Expenditure Program Volume I FY 2025" href="/index.php?view=article&amp;id=2897:national-expenditure-program-volume-i-fy-2025&amp;catid=351"><img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/a8230581b5b372ce2eef6308e496588f_2897.jpg" width="120" alt="National Expenditure Program Volume I FY 2025" /></a>
+									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="National Expenditure Program Volume I FY 2025" href="/index.php?view=article&amp;id=2897:national-expenditure-program-volume-i-fy-2025&amp;catid=351"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/2025_NEP_COVER_VOL_1.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+																				<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="5">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+					
+				<a class="link-image" title=" National Expenditure Program Volume II FY 2025 " href="/index.php?view=article&amp;id=2898:national-expenditure-program-volume-ii-fy-2025&amp;catid=351"><img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/a8230581b5b372ce2eef6308e496588f_2898.jpg" width="120" alt=" National Expenditure Program Volume II FY 2025 " /></a>
+									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title=" National Expenditure Program Volume II FY 2025 " href="/index.php?view=article&amp;id=2898:national-expenditure-program-volume-ii-fy-2025&amp;catid=351"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/2025_NEP_COVER_VOL_2.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+																				<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="6">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+					
+				<a class="link-image" title="National Expenditure Program Volume III FY 2025" href="/index.php?view=article&amp;id=2899:national-expenditure-program-volume-iii-fy-2025&amp;catid=351"><img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/a8230581b5b372ce2eef6308e496588f_2899.jpg" width="120" alt="National Expenditure Program Volume III FY 2025" /></a>
+									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="National Expenditure Program Volume III FY 2025" href="/index.php?view=article&amp;id=2899:national-expenditure-program-volume-iii-fy-2025&amp;catid=351"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/2025_NEP_COVER_VOL_3.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+																				<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="7">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+					
+				<a class="link-image" title="National Expenditure Program FY 2025" href="/index.php/2025/national-expenditure-program-fy-2025"><img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/a8230581b5b372ce2eef6308e496588f_2893.jpg" width="120" alt="National Expenditure Program FY 2025" /></a>
+									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="National Expenditure Program FY 2025" href="/index.php/2025/national-expenditure-program-fy-2025"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/2025_NEP_COVER_VOL_1.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+																				<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="8">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+					
+				<a class="link-image" title="2025 Budget Priorities Framework (Macroeconomic and Fiscal Environment)" href="/index.php/2025/2025-budget-priorities-framework-macroeconomic-and-fiscal-environment"><img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/a8230581b5b372ce2eef6308e496588f_2872.jpg" width="120" alt="2025 Budget Priorities Framework (Macroeconomic and Fiscal Environment)" /></a>
+									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="2025 Budget Priorities Framework (Macroeconomic and Fiscal Environment)" href="/index.php/2025/2025-budget-priorities-framework-macroeconomic-and-fiscal-environment"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/2025-Budget Priorities Framework-Macroeconomi-and-Fiscal-Environment_001.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+																				<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="9">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+					
+				<a class="link-image" title=" 2025 Budget Priorities Framework (Expenditure Priorities)" href="/index.php/2025/2025-budget-priorities-framework-expenditure-priorities"><img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/a8230581b5b372ce2eef6308e496588f_2780.jpg" width="120" alt=" 2025 Budget Priorities Framework (Expenditure Priorities)" /></a>
+									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title=" 2025 Budget Priorities Framework (Expenditure Priorities)" href="/index.php/2025/2025-budget-priorities-framework-expenditure-priorities"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/2025-Budget-Priorities-Framework-Expenditures-Final_001.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+																				<div></div><div style="clear:both"></div></div></div>
+		</div>
+</div>
+<style type="text/css">.jtcs346.owl-carousel .owl-nav{justify-content:flex-start}
+.jtcs346.positiontop.owl-carousel .owl-nav{width:100%;position:absolute;top:-40px; bottom:auto;justify-content:flex-start;gap:0 10px;}
+.jtcs346.positioncenter.owl-carousel .owl-nav{width:100%;position:absolute;top:50%; bottom:auto;transform:translateY(-50%);justify-content:space-between; z-index:-1;}
+.jtcs346.positionbottom.owl-carousel .owl-nav{width:100%;position:absolute;top:auto; bottom:-40px;justify-content:flex-start;gap:0 10px;}
+.jtcs346 .owl-dots {position: relative;bottom:-15px;;}
+.jtcs346.owl-carousel .owl-nav.disabled{ display:none}
+</style>
+<script defer type="text/javascript">
+jQuery(document).ready(function() {
+  var el = jQuery('.jtcs346.owl-carousel');
+  var carousel;
+  var carouselOptions = {
+    margin: 20,
+    stagePadding: 0,
+	center: false,
+	loop: true,
+    nav: true,
+    dots: false,
+	mouseDrag:true,
+	rtl: false,
+    slideBy: 'page',
+	autoplay:true,
+	autoplaySpeed:300,
+	smartSpeed:300,
+	autoplayTimeout:4000,
+	autoplayHoverPause:true,
+	mouseDrag: true,
+	touchDrag: true,
+    responsive: {
+      0: {
+        items: 2,
+        rows: 1 //custom option not used by Owl Carousel, but used by the algorithm below
+      },
+      768: {
+        items: 3,
+        rows:1//custom option not used by Owl Carousel, but used by the algorithm below
+      },
+      991: {
+        items:4,
+        rows:1 //custom option not used by Owl Carousel, but used by the algorithm below
+      }
+    }
+  };
+
+  //Taken from Owl Carousel so we calculate width the same way
+  var viewport = function() {
+    var width;
+    if (carouselOptions.responsiveBaseElement && carouselOptions.responsiveBaseElement !== window) {
+      width = jQuery(carouselOptions.responsiveBaseElement).width();
+    } else if (window.innerWidth) {
+      width = window.innerWidth;
+    } else if (document.documentElement && document.documentElement.clientWidth) {
+      width = document.documentElement.clientWidth;
+    } else {
+      console.warn('Can not detect viewport width.');
+    }
+    return width;
+  };
+
+  var severalRows = false;
+  var orderedBreakpoints = [];
+  for (var breakpoint in carouselOptions.responsive) {
+    if (carouselOptions.responsive[breakpoint].rows > 1) {
+      severalRows = true;
+    }
+    orderedBreakpoints.push(parseInt(breakpoint));
+  }
+  
+  //Custom logic is active if carousel is set up to have more than one row for some given window width
+  if (severalRows) {
+    orderedBreakpoints.sort(function (a, b) {
+      return b - a;
+    });
+    var slides = el.find('[data-slide-index]');
+    var slidesNb = slides.length;
+    if (slidesNb > 0) {
+      var rowsNb;
+      var previousRowsNb = undefined;
+      var colsNb;
+      var previousColsNb = undefined;
+
+      //Calculates number of rows and cols based on current window width
+      var updateRowsColsNb = function () {
+        var width =  viewport();
+        for (var i = 0; i < orderedBreakpoints.length; i++) {
+          var breakpoint = orderedBreakpoints[i];
+          if (width >= breakpoint || i == (orderedBreakpoints.length - 1)) {
+            var breakpointSettings = carouselOptions.responsive['' + breakpoint];
+            rowsNb = breakpointSettings.rows;
+            colsNb = breakpointSettings.items;
+            break;
+          }
+        }
+      };
+
+      var updateCarousel = function () {
+        updateRowsColsNb();
+
+        //Carousel is recalculated if and only if a change in number of columns/rows is requested
+        if (rowsNb != previousRowsNb || colsNb != previousColsNb) {
+          var reInit = false;
+          if (carousel) {
+            //Destroy existing carousel if any, and set html markup back to its initial state
+            carousel.trigger('destroy.owl.carousel');
+            carousel = undefined;
+            slides = el.find('[data-slide-index]').detach().appendTo(el);
+            el.find('.fake-col-wrapper').remove();
+            reInit = true;
+          }
+
+
+          //This is the only real 'smart' part of the algorithm
+
+          //First calculate the number of needed columns for the whole carousel
+          var perPage = rowsNb * colsNb;
+          var pageIndex = Math.floor(slidesNb / perPage);
+          var fakeColsNb = pageIndex * colsNb + (slidesNb >= (pageIndex * perPage + colsNb) ? colsNb : (slidesNb % colsNb));
+
+          //Then populate with needed html markup
+          var count = 0;
+          for (var i = 0; i < fakeColsNb; i++) {
+            //For each column, create a new wrapper div
+            var fakeCol = jQuery('<div class="fake-col-wrapper"></div>').appendTo(el);
+            for (var j = 0; j < rowsNb; j++) {
+              //For each row in said column, calculate which slide should be present
+              var index = Math.floor(count / perPage) * perPage + (i % colsNb) + j * colsNb;
+              if (index < slidesNb) {
+                //If said slide exists, move it under wrapper div
+                slides.filter('[data-slide-index=' + index + ']').detach().appendTo(fakeCol);
+              }
+              count++;
+            }
+          }
+          //end of 'smart' part
+
+          previousRowsNb = rowsNb;
+          previousColsNb = colsNb;
+
+          if (reInit) {
+            //re-init carousel with new markup
+            carousel = el.owlCarousel(carouselOptions);
+          }
+        }
+      };
+
+      //Trigger possible update when window size changes
+      jQuery(window).on('resize', updateCarousel);
+
+      //We need to execute the algorithm once before first init in any case
+      updateCarousel();
+    }
+  }
+
+  //init
+  carousel = el.owlCarousel(carouselOptions);
+});
+</script>
+
+<script>
+lightbox.option({
+    fadeDuration:300,
+    fitImagesInViewport:true,
+    imageFadeDuration: 300,
+    positionFromTop: 150,
+    resizeDuration: 150,
+	  })
+</script></div></div>
+</div>
+</div></div>
+</div>
+
+<div id="t4-section-5" class="t4-section">
+<div class="t4-section-inner container"><div id="system-message-container" aria-live="polite"></div>
+<div class="blog-featured" itemscope itemtype="https://schema.org/Blog">
+		
+				
+	
+	
+</div></div>
+</div>
+
+<div id="t4-section-6" class="t4-section  border-bottom"><div class="bg-overlay bg-overlay-image">&nbsp;</div>
+<div class="t4-section-inner container"><div class="t4-section-inner section"><div class="section-title-wrap text-left "><h2>Latest Issuances</h2><div class="sub-heading lead"></div></div><div class="section-ct"><div class="jtcs_item_wrapper jt-cs" style="padding:10px 10px 10px 10px;">
+<div class="jtcs289 positioncenter owl-carousel owl-carousel owl-theme slides_container">
+			 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="0">
+			  <div class="jt-inner">
+			 								<h5>
+				<a class="jt-title" href="/index.php/resolution" itemprop="url">
+					Resolution No. 2024 - 01				</a></h5>
+														
+				<div class="jt-introtext">
+					August 13, 2024  A RESOLUTION FOR THE PROCESSING  OF APPEALS CONCERNING THE PERFORMANCE-BASED BONUS FOR FISCAL YEAR (FY) 2022
+Download Resolution No....					
+				</div>
+													<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="Resolution No. 2024 - 01"
+							href="/index.php/resolution"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Download						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="1">
+			  <div class="jt-inner">
+			 								<h5>
+				<a class="jt-title" href="/index.php?view=article&amp;id=2927:local-budget-circular-no-160&amp;catid=338" itemprop="url">
+					Local Budget Circular No. 160				</a></h5>
+														
+				<div class="jt-introtext">
+					August 12, 2024   Implementation of the First Tranche of the Modified Salary Schedule for Local Government Personnel Pursuant to Executive Order (EO) ...					
+				</div>
+													<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="Local Budget Circular No. 160"
+							href="/index.php?view=article&amp;id=2927:local-budget-circular-no-160&amp;catid=338"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Download						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="2">
+			  <div class="jt-inner">
+			 								<h5>
+				<a class="jt-title" href="/index.php?view=article&amp;id=2926:national-budget-circular-no-594&amp;catid=334" itemprop="url">
+					National Budget Circular No. 594 				</a></h5>
+														
+				<div class="jt-introtext">
+					August 12, 2024  Implementation of the First Tranche of the Updated Salary Schedule for Civilian Government Personnel Under Executive Order (EO) No. 6...					
+				</div>
+													<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="National Budget Circular No. 594 "
+							href="/index.php?view=article&amp;id=2926:national-budget-circular-no-594&amp;catid=334"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Download						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="3">
+			  <div class="jt-inner">
+			 								<h5>
+				<a class="jt-title" href="/index.php/budget-2/budget-releases/18-budget-circular/348-budget-circular-2024/2923-budget-circular-no-2024-2" itemprop="url">
+					Budget Circular No. 2024-2				</a></h5>
+														
+				<div class="jt-introtext">
+					August 2, 2024 GUIDELINES ON THE PAYMENT OF COMMUNICATION EXPENSES OF CERTAIN GOVERNMENT PERSONNEL
+Download Budget Circular No. 2024-2
+{pdf=wp-conte...					
+				</div>
+													<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="Budget Circular No. 2024-2"
+							href="/index.php/budget-2/budget-releases/18-budget-circular/348-budget-circular-2024/2923-budget-circular-no-2024-2"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Download						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+		</div>
+</div>
+<style type="text/css">.jtcs289.owl-carousel .owl-nav{justify-content:flex-start}
+.jtcs289.positiontop.owl-carousel .owl-nav{width:100%;position:absolute;top:-40px; bottom:auto;justify-content:flex-start;gap:0 10px;}
+.jtcs289.positioncenter.owl-carousel .owl-nav{width:100%;position:absolute;top:50%; bottom:auto;transform:translateY(-50%);justify-content:space-between; z-index:-1;}
+.jtcs289.positionbottom.owl-carousel .owl-nav{width:100%;position:absolute;top:auto; bottom:-40px;justify-content:flex-start;gap:0 10px;}
+.jtcs289 .owl-dots {position: relative;bottom:-15px;;}
+.jtcs289.owl-carousel .owl-nav.disabled{ display:none}
+</style>
+<script defer type="text/javascript">
+jQuery(document).ready(function() {
+  var el = jQuery('.jtcs289.owl-carousel');
+  var carousel;
+  var carouselOptions = {
+    margin: 20,
+    stagePadding: 0,
+	center: false,
+	loop: true,
+    nav: true,
+    dots: true,
+	mouseDrag:true,
+	rtl: false,
+    slideBy: 'page',
+	autoplay:false,
+	autoplaySpeed:300,
+	smartSpeed:300,
+	autoplayTimeout:4000,
+	autoplayHoverPause:true,
+	mouseDrag: true,
+	touchDrag: true,
+    responsive: {
+      0: {
+        items: 1,
+        rows: 4 //custom option not used by Owl Carousel, but used by the algorithm below
+      },
+      768: {
+        items: 2,
+        rows:3//custom option not used by Owl Carousel, but used by the algorithm below
+      },
+      991: {
+        items:4,
+        rows:1 //custom option not used by Owl Carousel, but used by the algorithm below
+      }
+    }
+  };
+
+  //Taken from Owl Carousel so we calculate width the same way
+  var viewport = function() {
+    var width;
+    if (carouselOptions.responsiveBaseElement && carouselOptions.responsiveBaseElement !== window) {
+      width = jQuery(carouselOptions.responsiveBaseElement).width();
+    } else if (window.innerWidth) {
+      width = window.innerWidth;
+    } else if (document.documentElement && document.documentElement.clientWidth) {
+      width = document.documentElement.clientWidth;
+    } else {
+      console.warn('Can not detect viewport width.');
+    }
+    return width;
+  };
+
+  var severalRows = false;
+  var orderedBreakpoints = [];
+  for (var breakpoint in carouselOptions.responsive) {
+    if (carouselOptions.responsive[breakpoint].rows > 1) {
+      severalRows = true;
+    }
+    orderedBreakpoints.push(parseInt(breakpoint));
+  }
+  
+  //Custom logic is active if carousel is set up to have more than one row for some given window width
+  if (severalRows) {
+    orderedBreakpoints.sort(function (a, b) {
+      return b - a;
+    });
+    var slides = el.find('[data-slide-index]');
+    var slidesNb = slides.length;
+    if (slidesNb > 0) {
+      var rowsNb;
+      var previousRowsNb = undefined;
+      var colsNb;
+      var previousColsNb = undefined;
+
+      //Calculates number of rows and cols based on current window width
+      var updateRowsColsNb = function () {
+        var width =  viewport();
+        for (var i = 0; i < orderedBreakpoints.length; i++) {
+          var breakpoint = orderedBreakpoints[i];
+          if (width >= breakpoint || i == (orderedBreakpoints.length - 1)) {
+            var breakpointSettings = carouselOptions.responsive['' + breakpoint];
+            rowsNb = breakpointSettings.rows;
+            colsNb = breakpointSettings.items;
+            break;
+          }
+        }
+      };
+
+      var updateCarousel = function () {
+        updateRowsColsNb();
+
+        //Carousel is recalculated if and only if a change in number of columns/rows is requested
+        if (rowsNb != previousRowsNb || colsNb != previousColsNb) {
+          var reInit = false;
+          if (carousel) {
+            //Destroy existing carousel if any, and set html markup back to its initial state
+            carousel.trigger('destroy.owl.carousel');
+            carousel = undefined;
+            slides = el.find('[data-slide-index]').detach().appendTo(el);
+            el.find('.fake-col-wrapper').remove();
+            reInit = true;
+          }
+
+
+          //This is the only real 'smart' part of the algorithm
+
+          //First calculate the number of needed columns for the whole carousel
+          var perPage = rowsNb * colsNb;
+          var pageIndex = Math.floor(slidesNb / perPage);
+          var fakeColsNb = pageIndex * colsNb + (slidesNb >= (pageIndex * perPage + colsNb) ? colsNb : (slidesNb % colsNb));
+
+          //Then populate with needed html markup
+          var count = 0;
+          for (var i = 0; i < fakeColsNb; i++) {
+            //For each column, create a new wrapper div
+            var fakeCol = jQuery('<div class="fake-col-wrapper"></div>').appendTo(el);
+            for (var j = 0; j < rowsNb; j++) {
+              //For each row in said column, calculate which slide should be present
+              var index = Math.floor(count / perPage) * perPage + (i % colsNb) + j * colsNb;
+              if (index < slidesNb) {
+                //If said slide exists, move it under wrapper div
+                slides.filter('[data-slide-index=' + index + ']').detach().appendTo(fakeCol);
+              }
+              count++;
+            }
+          }
+          //end of 'smart' part
+
+          previousRowsNb = rowsNb;
+          previousColsNb = colsNb;
+
+          if (reInit) {
+            //re-init carousel with new markup
+            carousel = el.owlCarousel(carouselOptions);
+          }
+        }
+      };
+
+      //Trigger possible update when window size changes
+      jQuery(window).on('resize', updateCarousel);
+
+      //We need to execute the algorithm once before first init in any case
+      updateCarousel();
+    }
+  }
+
+  //init
+  carousel = el.owlCarousel(carouselOptions);
+});
+</script>
+
+<script>
+lightbox.option({
+    fadeDuration:300,
+    fitImagesInViewport:true,
+    imageFadeDuration: 300,
+    positionFromTop: 150,
+    resizeDuration: 150,
+	  })
+</script></div></div></div>
+</div>
+
+<div id="t4-advisories" class="t4-section  t4-advisories  border-bottom  t4-palette-mainnav">
+<div class="t4-section-inner container"><div class="t4-row row">
+<div class="t4-col advisory-module-label col-sm col-md-3">
+<div class="t4-section-inner section"><div class="section-title-wrap text-left "><h3></h3><div class="sub-heading lead"></div></div><div class="section-ct">
+
+<div class="custom"  >
+	<p style="text-align: center;"><img src="/images/advisory%20module%20label%202024.png" alt="" width="340" height="254" loading="lazy" data-path="local-images:/advisory module label 2024.png" /></p></div>
+</div></div>
+</div>
+<div class="t4-col advisory-section col-sm">
+<div class="t4-section-inner section"><div class="section-title-wrap text-left "><h3></h3><div class="sub-heading lead"></div></div><div class="section-ct"><div class="jtcs_item_wrapper jt-cs" style="padding:10px 10px 10px 10px;">
+<div class="jtcs339 positioncenter owl-carousel owl-carousel owl-theme slides_container">
+			 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="0">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:5px">
+					
+				<a class="link-image" title="Notice to the Public" href="/index.php?view=article&amp;id=2604:notice-to-the-public&amp;catid=340"><img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/c0d29696fc1eea771df60ff95a4772ff_2604.png" alt="Notice to the Public"width="200"/></a>
+									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Notice to the Public" href="/index.php?view=article&amp;id=2604:notice-to-the-public&amp;catid=340"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/advisories-icon/Slide3.png" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+																				<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="1">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:5px">
+					
+				<a class="link-image" title="Advisory to the Public" href="/index.php?view=article&amp;id=2605:advisory-to-the-public&amp;catid=340"><img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/c0d29696fc1eea771df60ff95a4772ff_2605.png" alt="Advisory to the Public"width="200"/></a>
+									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Advisory to the Public" href="/index.php?view=article&amp;id=2605:advisory-to-the-public&amp;catid=340"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/advisories-icon/Slide2.png" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+																				<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="2">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:5px">
+					
+				<a class="link-image" title="Advisory to the Public" href="/index.php?view=article&amp;id=2606:advisory-to-the-public-ro9&amp;catid=340"><img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/c0d29696fc1eea771df60ff95a4772ff_2606.png" alt="Advisory to the Public"width="200"/></a>
+									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Advisory to the Public" href="/index.php?view=article&amp;id=2606:advisory-to-the-public-ro9&amp;catid=340"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/advisories-icon/Slide1.png" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+																				<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="3">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:5px">
+					
+				<a class="link-image" title="Invitation to Apply as Canteen Concessionaires" href="/index.php?view=article&amp;id=2607:invitation-to-apply-as-canteen-concessionaires&amp;catid=340"><img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/c0d29696fc1eea771df60ff95a4772ff_2607.png" alt="Invitation to Apply as Canteen Concessionaires"width="200"/></a>
+									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Invitation to Apply as Canteen Concessionaires" href="/index.php?view=article&amp;id=2607:invitation-to-apply-as-canteen-concessionaires&amp;catid=340"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/advisories-icon/Slide4.png" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+																				<div></div><div style="clear:both"></div></div></div>
+		</div>
+</div>
+<style type="text/css">.jtcs339.owl-carousel .owl-nav{justify-content:flex-start}
+.jtcs339.positiontop.owl-carousel .owl-nav{width:100%;position:absolute;top:-40px; bottom:auto;justify-content:flex-start;gap:0 10px;}
+.jtcs339.positioncenter.owl-carousel .owl-nav{width:100%;position:absolute;top:50%; bottom:auto;transform:translateY(-50%);justify-content:space-between; z-index:-1;}
+.jtcs339.positionbottom.owl-carousel .owl-nav{width:100%;position:absolute;top:auto; bottom:-40px;justify-content:flex-start;gap:0 10px;}
+.jtcs339 .owl-dots {position: relative;bottom:-15px;;}
+.jtcs339.owl-carousel .owl-nav.disabled{ display:none}
+</style>
+<script defer type="text/javascript">
+jQuery(document).ready(function() {
+  var el = jQuery('.jtcs339.owl-carousel');
+  var carousel;
+  var carouselOptions = {
+    margin: 20,
+    stagePadding: 0,
+	center: false,
+	loop: true,
+    nav: true,
+    dots: false,
+	mouseDrag:true,
+	rtl: false,
+    slideBy: 'page',
+	autoplay:true,
+	autoplaySpeed:300,
+	smartSpeed:300,
+	autoplayTimeout:4000,
+	autoplayHoverPause:true,
+	mouseDrag: true,
+	touchDrag: true,
+    responsive: {
+      0: {
+        items: 2,
+        rows: 1 //custom option not used by Owl Carousel, but used by the algorithm below
+      },
+      768: {
+        items: 3,
+        rows:1//custom option not used by Owl Carousel, but used by the algorithm below
+      },
+      991: {
+        items:4,
+        rows:1 //custom option not used by Owl Carousel, but used by the algorithm below
+      }
+    }
+  };
+
+  //Taken from Owl Carousel so we calculate width the same way
+  var viewport = function() {
+    var width;
+    if (carouselOptions.responsiveBaseElement && carouselOptions.responsiveBaseElement !== window) {
+      width = jQuery(carouselOptions.responsiveBaseElement).width();
+    } else if (window.innerWidth) {
+      width = window.innerWidth;
+    } else if (document.documentElement && document.documentElement.clientWidth) {
+      width = document.documentElement.clientWidth;
+    } else {
+      console.warn('Can not detect viewport width.');
+    }
+    return width;
+  };
+
+  var severalRows = false;
+  var orderedBreakpoints = [];
+  for (var breakpoint in carouselOptions.responsive) {
+    if (carouselOptions.responsive[breakpoint].rows > 1) {
+      severalRows = true;
+    }
+    orderedBreakpoints.push(parseInt(breakpoint));
+  }
+  
+  //Custom logic is active if carousel is set up to have more than one row for some given window width
+  if (severalRows) {
+    orderedBreakpoints.sort(function (a, b) {
+      return b - a;
+    });
+    var slides = el.find('[data-slide-index]');
+    var slidesNb = slides.length;
+    if (slidesNb > 0) {
+      var rowsNb;
+      var previousRowsNb = undefined;
+      var colsNb;
+      var previousColsNb = undefined;
+
+      //Calculates number of rows and cols based on current window width
+      var updateRowsColsNb = function () {
+        var width =  viewport();
+        for (var i = 0; i < orderedBreakpoints.length; i++) {
+          var breakpoint = orderedBreakpoints[i];
+          if (width >= breakpoint || i == (orderedBreakpoints.length - 1)) {
+            var breakpointSettings = carouselOptions.responsive['' + breakpoint];
+            rowsNb = breakpointSettings.rows;
+            colsNb = breakpointSettings.items;
+            break;
+          }
+        }
+      };
+
+      var updateCarousel = function () {
+        updateRowsColsNb();
+
+        //Carousel is recalculated if and only if a change in number of columns/rows is requested
+        if (rowsNb != previousRowsNb || colsNb != previousColsNb) {
+          var reInit = false;
+          if (carousel) {
+            //Destroy existing carousel if any, and set html markup back to its initial state
+            carousel.trigger('destroy.owl.carousel');
+            carousel = undefined;
+            slides = el.find('[data-slide-index]').detach().appendTo(el);
+            el.find('.fake-col-wrapper').remove();
+            reInit = true;
+          }
+
+
+          //This is the only real 'smart' part of the algorithm
+
+          //First calculate the number of needed columns for the whole carousel
+          var perPage = rowsNb * colsNb;
+          var pageIndex = Math.floor(slidesNb / perPage);
+          var fakeColsNb = pageIndex * colsNb + (slidesNb >= (pageIndex * perPage + colsNb) ? colsNb : (slidesNb % colsNb));
+
+          //Then populate with needed html markup
+          var count = 0;
+          for (var i = 0; i < fakeColsNb; i++) {
+            //For each column, create a new wrapper div
+            var fakeCol = jQuery('<div class="fake-col-wrapper"></div>').appendTo(el);
+            for (var j = 0; j < rowsNb; j++) {
+              //For each row in said column, calculate which slide should be present
+              var index = Math.floor(count / perPage) * perPage + (i % colsNb) + j * colsNb;
+              if (index < slidesNb) {
+                //If said slide exists, move it under wrapper div
+                slides.filter('[data-slide-index=' + index + ']').detach().appendTo(fakeCol);
+              }
+              count++;
+            }
+          }
+          //end of 'smart' part
+
+          previousRowsNb = rowsNb;
+          previousColsNb = colsNb;
+
+          if (reInit) {
+            //re-init carousel with new markup
+            carousel = el.owlCarousel(carouselOptions);
+          }
+        }
+      };
+
+      //Trigger possible update when window size changes
+      jQuery(window).on('resize', updateCarousel);
+
+      //We need to execute the algorithm once before first init in any case
+      updateCarousel();
+    }
+  }
+
+  //init
+  carousel = el.owlCarousel(carouselOptions);
+});
+</script>
+
+<script>
+lightbox.option({
+    fadeDuration:300,
+    fitImagesInViewport:true,
+    imageFadeDuration: 300,
+    positionFromTop: 150,
+    resizeDuration: 150,
+	  })
+</script></div></div>
+</div>
+</div></div>
+</div>
+
+<div id="t4-latest-updates" class="t4-section  t4-latest-updates  border-bottom">
+<div class="t4-section-inner container"><nav class="t4-section-inner section"><div class="section-title-wrap text-left "><h2>News</h2><div class="sub-heading lead"></div></div><div class="section-ct"><div class="jtcs_item_wrapper jt-cs" style="padding:10px 10px 10px 10px;">
+<div class="jtcs209 positioncenter owl-carousel owl-carousel owl-theme slides_container">
+			 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="0">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2934.jpg" width="300" alt=" Pangandaman calls for passage of Budget Modernization Bill " />									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title=" Pangandaman calls for passage of Budget Modernization Bill " href="/index.php/management-2/2934-pangandaman-calls-for-passage-of-budget-modernization-bill"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/PR-08152024.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/management-2/2934-pangandaman-calls-for-passage-of-budget-modernization-bill" itemprop="url">
+					 Pangandaman calls for passage of Budget Moderniza...				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">Aug 15, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+										
+				<div class="jt-introtext">
+					DBM PRESS RELEASE 
+
+Department of Budget and Management (DBM) Secretary Amenah F. Pangandaman urged lawmakers to pass the pending bill on Progressiv...					
+				</div>
+													<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title=" Pangandaman calls for passage of Budget Moderniza..."
+							href="/index.php/management-2/2934-pangandaman-calls-for-passage-of-budget-modernization-bill"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="1">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2933.png" alt="Pangandaman appeals to heads of agencies: Prioritize COS, JO employees in filling plantilla positions amid PBBM’s decision to extend their engagement until Dec. 2025"width="300"/>									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Pangandaman appeals to heads of agencies: Prioritize COS, JO employees in filling plantilla positions amid PBBM’s decision to extend their engagement until Dec. 2025" href="/index.php/management-2/2933-pangandaman-appeals-to-heads-of-agencies-prioritize-cos-jo-employees-in-filling-plantilla-positions-amid-pbbm-s-decision-to-extend-their-engagement-until-dec-2025"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/pressreleases/PR_8-15-2024-1.png" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/management-2/2933-pangandaman-appeals-to-heads-of-agencies-prioritize-cos-jo-employees-in-filling-plantilla-positions-amid-pbbm-s-decision-to-extend-their-engagement-until-dec-2025" itemprop="url">
+					Pangandaman appeals to heads of agencies: Prioriti...				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">Aug 15, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+										
+				<div class="jt-introtext">
+					DBM Press Release
+
+ 
+
+Department of Budget and Management (DBM) Secretary Amenah “Mina” F. Pangandaman urged the heads of agencies to prioritize c...					
+				</div>
+													<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="Pangandaman appeals to heads of agencies: Prioriti..."
+							href="/index.php/management-2/2933-pangandaman-appeals-to-heads-of-agencies-prioritize-cos-jo-employees-in-filling-plantilla-positions-amid-pbbm-s-decision-to-extend-their-engagement-until-dec-2025"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="2">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2929.jpg" width="300" alt="PANGANDAMAN TO SENATOR LEGARDA: LET’S GET AN “A” " />									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="PANGANDAMAN TO SENATOR LEGARDA: LET’S GET AN “A” " href="/index.php/management-2/2929-pangandaman-to-senator-legarda-let-s-get-an-a"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/pressreleases/PR_08-13-2024_1.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/management-2/2929-pangandaman-to-senator-legarda-let-s-get-an-a" itemprop="url">
+					PANGANDAMAN TO SENATOR LEGARDA: LET’S GET AN “A” 				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">Aug 13, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+										
+				<div class="jt-introtext">
+					DBM Press Release
+ 
+
+
+ 
+Budget Secretary Emphasizes Whole-of-Government Approach Key to 'A' Credit Rating
+ 
+
+
+"A whole-of-government approach...					
+				</div>
+													<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="PANGANDAMAN TO SENATOR LEGARDA: LET’S GET AN “A” "
+							href="/index.php/management-2/2929-pangandaman-to-senator-legarda-let-s-get-an-a"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="3">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2928.jpg" width="300" alt="Pangandaman: First tranche of salary hike for gov’t workers to take effect this year; sub-pro, professional employees to get higher increase" />									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Pangandaman: First tranche of salary hike for gov’t workers to take effect this year; sub-pro, professional employees to get higher increase" href="/index.php/management-2/2928-pangandaman-first-tranche-of-salary-hike-for-gov-t-workers-to-take-effect-this-year-sub-pro-professional-employees-to-get-higher-increase"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/dbmlogo-withbackground.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/management-2/2928-pangandaman-first-tranche-of-salary-hike-for-gov-t-workers-to-take-effect-this-year-sub-pro-professional-employees-to-get-higher-increase" itemprop="url">
+					Pangandaman: First tranche of salary hike for gov’...				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">Aug 12, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+										
+				<div class="jt-introtext">
+					DBM Press Release
+ 
+ 
+Department of Budget and Management (DBM) Secretary Amenah "Mina" F. Pangandaman assured that the first tranche of the salary...					
+				</div>
+													<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="Pangandaman: First tranche of salary hike for gov’..."
+							href="/index.php/management-2/2928-pangandaman-first-tranche-of-salary-hike-for-gov-t-workers-to-take-effect-this-year-sub-pro-professional-employees-to-get-higher-increase"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="4">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2925.png" alt="Bolstering climate resilience PANGANDAMAN RELEASES P579.312 MILLION FOR GREEN MITIGATION PROJECTS"width="300"/>									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Bolstering climate resilience PANGANDAMAN RELEASES P579.312 MILLION FOR GREEN MITIGATION PROJECTS" href="/index.php/management-2/2925-bolstering-climate-resilience-pangandaman-releases-p579-312-million-for-green-mitigation-projects"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/pr-08072024.png" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/management-2/2925-bolstering-climate-resilience-pangandaman-releases-p579-312-million-for-green-mitigation-projects" itemprop="url">
+					Bolstering climate resilience PANGANDAMAN RELEASES...				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">Aug 07, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+										
+				<div class="jt-introtext">
+					DBM PRESS RELEASE
+ 
+
+ 
+For the implementation of projects under the People’s Survival Fund (PSF) aimed at enhancing community resilience and susta...					
+				</div>
+													<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="Bolstering climate resilience PANGANDAMAN RELEASES..."
+							href="/index.php/management-2/2925-bolstering-climate-resilience-pangandaman-releases-p579-312-million-for-green-mitigation-projects"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="5">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2924.jpg" width="300" alt="Pangandaman defends office of the President’s confidential funds: ‘He is the Commander-in-Chief, the Architect of National Security, Foreign Policy’" />									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Pangandaman defends office of the President’s confidential funds: ‘He is the Commander-in-Chief, the Architect of National Security, Foreign Policy’" href="/index.php/management-2/2924-pangandaman-defends-office-of-the-president-s-confidential-funds-he-is-the-commander-in-chief-the-architect-of-national-security-foreign-policy"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/dbmlogo-withbackground.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/management-2/2924-pangandaman-defends-office-of-the-president-s-confidential-funds-he-is-the-commander-in-chief-the-architect-of-national-security-foreign-policy" itemprop="url">
+					Pangandaman defends office of the President’s conf...				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">Aug 07, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+										
+				<div class="jt-introtext">
+					DBM Press Release
+ 
+During yesterday's hearings of the House Committee on Appropriations for the FY 2025 proposed national budget, Secretary Amenah ...					
+				</div>
+													<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="Pangandaman defends office of the President’s conf..."
+							href="/index.php/management-2/2924-pangandaman-defends-office-of-the-president-s-confidential-funds-he-is-the-commander-in-chief-the-architect-of-national-security-foreign-policy"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="6">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2922.png" alt="Pangandaman approves release of addt'l P5 billion to fully cover 4Ps grants in FY 2023"width="300"/>									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Pangandaman approves release of addt'l P5 billion to fully cover 4Ps grants in FY 2023" href="/index.php/management-2/2922-pangandaman-approves-release-of-addtl-p5-billion-to-fully-cover-4ps-grants-in-fy-2023"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/pressreleases/pr-08062024.png" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/management-2/2922-pangandaman-approves-release-of-addtl-p5-billion-to-fully-cover-4ps-grants-in-fy-2023" itemprop="url">
+					Pangandaman approves release of addt'l P5 billion ...				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">Aug 06, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+										
+				<div class="jt-introtext">
+					DBM Press Release
+ 
+
+ 
+For the additional funding of the Pantawid Pamilyang Pilipino Program (4Ps), a vital initiative designed to help reduce pov...					
+				</div>
+													<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="Pangandaman approves release of addt'l P5 billion ..."
+							href="/index.php/management-2/2922-pangandaman-approves-release-of-addtl-p5-billion-to-fully-cover-4ps-grants-in-fy-2023"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="7">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2921.jpg" width="300" alt="Pangandaman Pledges Support to Streamline Hajj Fund for Filipino Muslim Pilgrims" />									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Pangandaman Pledges Support to Streamline Hajj Fund for Filipino Muslim Pilgrims" href="/index.php/management-2/2921-pangandaman-pledges-support-to-streamline-hajj-fund-for-filipino-muslim-pilgrims"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/pressreleases/hajj-fund2024/DBM 10 2.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/management-2/2921-pangandaman-pledges-support-to-streamline-hajj-fund-for-filipino-muslim-pilgrims" itemprop="url">
+					Pangandaman Pledges Support to Streamline Hajj Fun...				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">Aug 06, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+										
+				<div class="jt-introtext">
+					DBM Press Release
+ 
+
+ 
+{gallery}/pressreleases/hajj-fund2024{/gallery}
+ 
+During the briefing of the Committee on Appropriations for the Fiscal Y...					
+				</div>
+													<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="Pangandaman Pledges Support to Streamline Hajj Fun..."
+							href="/index.php/management-2/2921-pangandaman-pledges-support-to-streamline-hajj-fund-for-filipino-muslim-pilgrims"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="8">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2920.jpg" width="300" alt="SPEAKER URGES HOUSE TO PASS PROPOSED  FY 2025 NATIONAL BUDGET BY SEPTEMBER" />									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="SPEAKER URGES HOUSE TO PASS PROPOSED  FY 2025 NATIONAL BUDGET BY SEPTEMBER" href="/index.php/management-2/2920-speaker-urges-house-to-pass-proposed-fy-2025-national-budget-by-september"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/pressreleases/Speaker-Urges-House.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/management-2/2920-speaker-urges-house-to-pass-proposed-fy-2025-national-budget-by-september" itemprop="url">
+					SPEAKER URGES HOUSE TO PASS PROPOSED  FY 2025 NATI...				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">Aug 05, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+										
+				<div class="jt-introtext">
+					DBM Press Release
+05 August 2024
+ 
+
+ 
+ 
+
+The House of Representatives officially begins deliberations on the proposed Php 6.352 trillion Nation...					
+				</div>
+													<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="SPEAKER URGES HOUSE TO PASS PROPOSED  FY 2025 NATI..."
+							href="/index.php/management-2/2920-speaker-urges-house-to-pass-proposed-fy-2025-national-budget-by-september"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="9">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2919.png" alt="Dagdag Sahod At Benepisyo: Pangandaman Thanks PBBM foar EO 64, Orders DBM to Rush Guidelines for Salary Increase"width="300"/>									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Dagdag Sahod At Benepisyo: Pangandaman Thanks PBBM foar EO 64, Orders DBM to Rush Guidelines for Salary Increase" href="/index.php/management-2/2919-dagdag-sahod-at-benepisyo-pangandaman-thanks-pbbm-foar-eo-64-orders-dbm-to-rush-guidelines-for-salary-increase"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/pressreleases/PR-08-03-2024-01.png" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/management-2/2919-dagdag-sahod-at-benepisyo-pangandaman-thanks-pbbm-foar-eo-64-orders-dbm-to-rush-guidelines-for-salary-increase" itemprop="url">
+					Dagdag Sahod At Benepisyo: Pangandaman Thanks PBBM...				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">Aug 03, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+										
+				<div class="jt-introtext">
+					DBM Press Release
+ 
+
+ 
+ 
+
+Budget Secretary Amenah Pangandaman today ordered DBM officials to finalize guidelines for the release of the salary i...					
+				</div>
+													<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="Dagdag Sahod At Benepisyo: Pangandaman Thanks PBBM..."
+							href="/index.php/management-2/2919-dagdag-sahod-at-benepisyo-pangandaman-thanks-pbbm-foar-eo-64-orders-dbm-to-rush-guidelines-for-salary-increase"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="10">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2913.png" alt="Pangandaman: Budget Focused on Strengthening Economy, Aligned with Philippine Development Plan"width="300"/>									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Pangandaman: Budget Focused on Strengthening Economy, Aligned with Philippine Development Plan" href="/index.php/management-2/2913-pangandaman-budget-focused-on-strengthening-economy-aligned-with-philippine-development-plan"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/pressreleases/budget-pdp2024/image 8.png" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/management-2/2913-pangandaman-budget-focused-on-strengthening-economy-aligned-with-philippine-development-plan" itemprop="url">
+					Pangandaman: Budget Focused on Strengthening Econo...				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">Aug 02, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+										
+				<div class="jt-introtext">
+					DBM Press Release
+ 
+
+ 
+{gallery}/pressreleases/budget-pdp2024{/gallery}
+ 
+In a press briefing at Malacañang on Thursday, August 1, 2024, Departm...					
+				</div>
+													<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="Pangandaman: Budget Focused on Strengthening Econo..."
+							href="/index.php/management-2/2913-pangandaman-budget-focused-on-strengthening-economy-aligned-with-philippine-development-plan"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="11">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2912.jpg" width="300" alt="DBM, GPPB begin transition period for implementation of New Gov't Procurement Act" />									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="DBM, GPPB begin transition period for implementation of New Gov't Procurement Act" href="/index.php/management-2/2912-dbm-gppb-begin-transition-period-for-implementation-of-new-govt-procurement-act"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/dbmlogo-withbackground.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/management-2/2912-dbm-gppb-begin-transition-period-for-implementation-of-new-govt-procurement-act" itemprop="url">
+					DBM, GPPB begin transition period for implementati...				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">Aug 02, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+										
+				<div class="jt-introtext">
+					DBM Press Release
+ 
+ 
+The Department of Budget and Management (DBM) and the Government Procurement Policy Board (GPPB) begin the transition period ...					
+				</div>
+													<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="DBM, GPPB begin transition period for implementati..."
+							href="/index.php/management-2/2912-dbm-gppb-begin-transition-period-for-implementation-of-new-govt-procurement-act"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+		</div>
+<div class='jtcs_more_cat'>More In <a href=/index.php/management-2>News</a>&nbsp;&nbsp;</div></div>
+<style type="text/css">.jtcs209.owl-carousel .owl-nav{justify-content:flex-start}
+.jtcs209.positiontop.owl-carousel .owl-nav{width:100%;position:absolute;top:-40px; bottom:auto;justify-content:flex-start;gap:0 10px;}
+.jtcs209.positioncenter.owl-carousel .owl-nav{width:100%;position:absolute;top:50%; bottom:auto;transform:translateY(-50%);justify-content:space-between; z-index:-1;}
+.jtcs209.positionbottom.owl-carousel .owl-nav{width:100%;position:absolute;top:auto; bottom:-40px;justify-content:flex-start;gap:0 10px;}
+.jtcs209 .owl-dots {position: relative;bottom:-15px;;}
+.jtcs209.owl-carousel .owl-nav.disabled{ display:none}
+</style>
+<script defer type="text/javascript">
+jQuery(document).ready(function() {
+  var el = jQuery('.jtcs209.owl-carousel');
+  var carousel;
+  var carouselOptions = {
+    margin: 20,
+    stagePadding: 0,
+	center: false,
+	loop: true,
+    nav: true,
+    dots: true,
+	mouseDrag:true,
+	rtl: false,
+    slideBy: 'page',
+	autoplay:false,
+	autoplaySpeed:300,
+	smartSpeed:300,
+	autoplayTimeout:4000,
+	autoplayHoverPause:true,
+	mouseDrag: true,
+	touchDrag: true,
+    responsive: {
+      0: {
+        items: 1,
+        rows: 4 //custom option not used by Owl Carousel, but used by the algorithm below
+      },
+      768: {
+        items: 2,
+        rows:3//custom option not used by Owl Carousel, but used by the algorithm below
+      },
+      991: {
+        items:4,
+        rows:1 //custom option not used by Owl Carousel, but used by the algorithm below
+      }
+    }
+  };
+
+  //Taken from Owl Carousel so we calculate width the same way
+  var viewport = function() {
+    var width;
+    if (carouselOptions.responsiveBaseElement && carouselOptions.responsiveBaseElement !== window) {
+      width = jQuery(carouselOptions.responsiveBaseElement).width();
+    } else if (window.innerWidth) {
+      width = window.innerWidth;
+    } else if (document.documentElement && document.documentElement.clientWidth) {
+      width = document.documentElement.clientWidth;
+    } else {
+      console.warn('Can not detect viewport width.');
+    }
+    return width;
+  };
+
+  var severalRows = false;
+  var orderedBreakpoints = [];
+  for (var breakpoint in carouselOptions.responsive) {
+    if (carouselOptions.responsive[breakpoint].rows > 1) {
+      severalRows = true;
+    }
+    orderedBreakpoints.push(parseInt(breakpoint));
+  }
+  
+  //Custom logic is active if carousel is set up to have more than one row for some given window width
+  if (severalRows) {
+    orderedBreakpoints.sort(function (a, b) {
+      return b - a;
+    });
+    var slides = el.find('[data-slide-index]');
+    var slidesNb = slides.length;
+    if (slidesNb > 0) {
+      var rowsNb;
+      var previousRowsNb = undefined;
+      var colsNb;
+      var previousColsNb = undefined;
+
+      //Calculates number of rows and cols based on current window width
+      var updateRowsColsNb = function () {
+        var width =  viewport();
+        for (var i = 0; i < orderedBreakpoints.length; i++) {
+          var breakpoint = orderedBreakpoints[i];
+          if (width >= breakpoint || i == (orderedBreakpoints.length - 1)) {
+            var breakpointSettings = carouselOptions.responsive['' + breakpoint];
+            rowsNb = breakpointSettings.rows;
+            colsNb = breakpointSettings.items;
+            break;
+          }
+        }
+      };
+
+      var updateCarousel = function () {
+        updateRowsColsNb();
+
+        //Carousel is recalculated if and only if a change in number of columns/rows is requested
+        if (rowsNb != previousRowsNb || colsNb != previousColsNb) {
+          var reInit = false;
+          if (carousel) {
+            //Destroy existing carousel if any, and set html markup back to its initial state
+            carousel.trigger('destroy.owl.carousel');
+            carousel = undefined;
+            slides = el.find('[data-slide-index]').detach().appendTo(el);
+            el.find('.fake-col-wrapper').remove();
+            reInit = true;
+          }
+
+
+          //This is the only real 'smart' part of the algorithm
+
+          //First calculate the number of needed columns for the whole carousel
+          var perPage = rowsNb * colsNb;
+          var pageIndex = Math.floor(slidesNb / perPage);
+          var fakeColsNb = pageIndex * colsNb + (slidesNb >= (pageIndex * perPage + colsNb) ? colsNb : (slidesNb % colsNb));
+
+          //Then populate with needed html markup
+          var count = 0;
+          for (var i = 0; i < fakeColsNb; i++) {
+            //For each column, create a new wrapper div
+            var fakeCol = jQuery('<div class="fake-col-wrapper"></div>').appendTo(el);
+            for (var j = 0; j < rowsNb; j++) {
+              //For each row in said column, calculate which slide should be present
+              var index = Math.floor(count / perPage) * perPage + (i % colsNb) + j * colsNb;
+              if (index < slidesNb) {
+                //If said slide exists, move it under wrapper div
+                slides.filter('[data-slide-index=' + index + ']').detach().appendTo(fakeCol);
+              }
+              count++;
+            }
+          }
+          //end of 'smart' part
+
+          previousRowsNb = rowsNb;
+          previousColsNb = colsNb;
+
+          if (reInit) {
+            //re-init carousel with new markup
+            carousel = el.owlCarousel(carouselOptions);
+          }
+        }
+      };
+
+      //Trigger possible update when window size changes
+      jQuery(window).on('resize', updateCarousel);
+
+      //We need to execute the algorithm once before first init in any case
+      updateCarousel();
+    }
+  }
+
+  //init
+  carousel = el.owlCarousel(carouselOptions);
+});
+</script>
+
+<script>
+lightbox.option({
+    fadeDuration:300,
+    fitImagesInViewport:true,
+    imageFadeDuration: 300,
+    positionFromTop: 150,
+    resizeDuration: 150,
+	  })
+</script></div></nav></div>
+</div>
+
+<div id="t4-section-7" class="t4-section  border-bottom">
+<div class="t4-section-inner container">
+
+<div class="custom"  >
+	<p style="text-align: center;"><!-- START: Modals --><a data-modals href="https://www.dbm.gov.ph/images/videos/PH-OGP-AVP-2023.mp4" data-modals-height="100%" data-modals-theme="dark" data-modals-width="100%"><img src="/images/video-ogp-2023.jpg" alt="" width="1401" height="687" loading="lazy" data-path="local-images:/video-ogp-2023.jpg" /></a><!-- END: Modals --></p></div>
+</div>
+</div>
+
+<div id="t4-section-8" class="t4-section">
+<div class="t4-section-inner container"><div class="t4-section-inner section"><div class="section-title-wrap text-left "><h2>Speeches</h2><div class="sub-heading lead"></div></div><div class="section-ct"><div class="jtcs_item_wrapper jt-cs" style="padding:10px 10px 10px 10px;">
+<div class="jtcs227 positioncenter owl-carousel owl-carousel owl-theme slides_container">
+			 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="0">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2907.jpg" width="300" alt="Agenda for Prosperity: Fulfilling the Needs and Aspirations of the Filipino People" />									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Agenda for Prosperity: Fulfilling the Needs and Aspirations of the Filipino People" href="/index.php/the-secretary-2/speeches/2907-agenda-for-prosperity-fulfilling-the-needs-and-aspirations-of-the-filipino-people"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/speeches/FY-2025-NEP-to-HOR/1.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/the-secretary-2/speeches/2907-agenda-for-prosperity-fulfilling-the-needs-and-aspirations-of-the-filipino-people" itemprop="url">
+					Agenda for Prosperity: Fulfilling the Needs and Aspirations of the Fil...				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">Jul 29, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+																	<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="Agenda for Prosperity: Fulfilling the Needs and Aspirations of the Fil..."
+							href="/index.php/the-secretary-2/speeches/2907-agenda-for-prosperity-fulfilling-the-needs-and-aspirations-of-the-filipino-people"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="1">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2866.jpg" width="300" alt="Renewing Partnerships Toward A Stronger Public Financial Management " />									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Renewing Partnerships Toward A Stronger Public Financial Management " href="/index.php/the-secretary-2/speeches/2866-renewing-partnerships-toward-a-stronger-public-financial-management"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/dbmlogo-withbackground.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/the-secretary-2/speeches/2866-renewing-partnerships-toward-a-stronger-public-financial-management" itemprop="url">
+					Renewing Partnerships Toward A Stronger Public Financial Management 				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">Jul 15, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+																	<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="Renewing Partnerships Toward A Stronger Public Financial Management "
+							href="/index.php/the-secretary-2/speeches/2866-renewing-partnerships-toward-a-stronger-public-financial-management"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="2">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2865.jpg" width="300" alt="PROMOTING INCLUSIVE GROWTH AND PROSPERITY  BY EMPOWERING LOCAL PFM PRACTITIONERS" />									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="PROMOTING INCLUSIVE GROWTH AND PROSPERITY  BY EMPOWERING LOCAL PFM PRACTITIONERS" href="/index.php/the-secretary-2/speeches/2865-promoting-inclusive-growth-and-prosperity-by-empowering-local-pfm-practitioners"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/speeches/pfmcp-tagaytay/1.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/the-secretary-2/speeches/2865-promoting-inclusive-growth-and-prosperity-by-empowering-local-pfm-practitioners" itemprop="url">
+					PROMOTING INCLUSIVE GROWTH AND PROSPERITY  BY EMPOWERING LOCAL PFM PRA...				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">Jul 12, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+																	<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="PROMOTING INCLUSIVE GROWTH AND PROSPERITY  BY EMPOWERING LOCAL PFM PRA..."
+							href="/index.php/the-secretary-2/speeches/2865-promoting-inclusive-growth-and-prosperity-by-empowering-local-pfm-practitioners"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="3">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2857.jpg" width="300" alt="Future-Proofing the Philippine Economy through the National Budget" />									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Future-Proofing the Philippine Economy through the National Budget" href="/index.php/the-secretary-2/speeches/2857-future-proofing-the-philippine-economy-through-the-national-budget"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/dbmlogo-withbackground.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/the-secretary-2/speeches/2857-future-proofing-the-philippine-economy-through-the-national-budget" itemprop="url">
+					Future-Proofing the Philippine Economy through the National Budget				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">Jul 08, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+																	<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="Future-Proofing the Philippine Economy through the National Budget"
+							href="/index.php/the-secretary-2/speeches/2857-future-proofing-the-philippine-economy-through-the-national-budget"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="4">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2846.jpg" width="300" alt="Empowering Local PFM Practitioners, Uplifting the Lives of Filipinos " />									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Empowering Local PFM Practitioners, Uplifting the Lives of Filipinos " href="/index.php/the-secretary-2/speeches/2846-empowering-local-pfm-practitioners-uplifting-the-lives-of-filipinos"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/dbmlogo-withbackground.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/the-secretary-2/speeches/2846-empowering-local-pfm-practitioners-uplifting-the-lives-of-filipinos" itemprop="url">
+					Empowering Local PFM Practitioners, Uplifting the Lives of Filipinos 				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">Jun 21, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+																	<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="Empowering Local PFM Practitioners, Uplifting the Lives of Filipinos "
+							href="/index.php/the-secretary-2/speeches/2846-empowering-local-pfm-practitioners-uplifting-the-lives-of-filipinos"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="5">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2836.jpg" width="300" alt="Advancing the Cause of Open Government Locally And Globally " />									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Advancing the Cause of Open Government Locally And Globally " href="/index.php/the-secretary-2/speeches/2836-advancing-the-cause-of-open-government-locally-and-globally"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/dbmlogo-withbackground.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/the-secretary-2/speeches/2836-advancing-the-cause-of-open-government-locally-and-globally" itemprop="url">
+					Advancing the Cause of Open Government Locally And Globally 				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">Jun 21, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+																	<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="Advancing the Cause of Open Government Locally And Globally "
+							href="/index.php/the-secretary-2/speeches/2836-advancing-the-cause-of-open-government-locally-and-globally"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="6">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2819.jpg" width="300" alt="PHILIPPINE OPEN GOVERNMENT PARTNERSHIP: Leading Transformational Collaborations Within the Partnership and Beyond" />									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="PHILIPPINE OPEN GOVERNMENT PARTNERSHIP: Leading Transformational Collaborations Within the Partnership and Beyond" href="/index.php/the-secretary-2/speeches/2819-philippine-open-government-partnership-leading-transformational-collaborations-within-the-partnership-and-beyond"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/speeches/PH-OGP-Diplomatic-Reception/2.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/the-secretary-2/speeches/2819-philippine-open-government-partnership-leading-transformational-collaborations-within-the-partnership-and-beyond" itemprop="url">
+					PHILIPPINE OPEN GOVERNMENT PARTNERSHIP: Leading Transformational Colla...				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">May 28, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+																	<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="PHILIPPINE OPEN GOVERNMENT PARTNERSHIP: Leading Transformational Colla..."
+							href="/index.php/the-secretary-2/speeches/2819-philippine-open-government-partnership-leading-transformational-collaborations-within-the-partnership-and-beyond"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="7">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2815.jpg" width="300" alt="PHILIPPINE OPEN GOVERNMENT PARTNERSHIP: Meeting The Moment, Raising Ambition,  Rising to the Challenge" />									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="PHILIPPINE OPEN GOVERNMENT PARTNERSHIP: Meeting The Moment, Raising Ambition,  Rising to the Challenge" href="/index.php/the-secretary-2/speeches/2815-philippine-open-government-partnership-meeting-the-moment-raising-ambition-rising-to-the-challenge"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/speeches/OGP-2024-Ceremony/1.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/the-secretary-2/speeches/2815-philippine-open-government-partnership-meeting-the-moment-raising-ambition-rising-to-the-challenge" itemprop="url">
+					PHILIPPINE OPEN GOVERNMENT PARTNERSHIP: Meeting The Moment, Raising Am...				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">May 27, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+																	<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="PHILIPPINE OPEN GOVERNMENT PARTNERSHIP: Meeting The Moment, Raising Am..."
+							href="/index.php/the-secretary-2/speeches/2815-philippine-open-government-partnership-meeting-the-moment-raising-ambition-rising-to-the-challenge"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="8">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2808.jpg" width="300" alt="Concretizing our Agenda for Prosperity Through Forward-Looking and Sustainable Partnerships" />									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Concretizing our Agenda for Prosperity Through Forward-Looking and Sustainable Partnerships" href="/index.php/the-secretary-2/speeches/2808-concretizing-our-agenda-for-prosperity-through-forward-looking-and-sustainable-partnerships"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/speeches/US-ASEAN-Business-Council-2024/1.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/the-secretary-2/speeches/2808-concretizing-our-agenda-for-prosperity-through-forward-looking-and-sustainable-partnerships" itemprop="url">
+					Concretizing our Agenda for Prosperity Through Forward-Looking and Sus...				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">May 20, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+																	<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="Concretizing our Agenda for Prosperity Through Forward-Looking and Sus..."
+							href="/index.php/the-secretary-2/speeches/2808-concretizing-our-agenda-for-prosperity-through-forward-looking-and-sustainable-partnerships"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+					 <div class="slide" style="padding:10px 10px 10px 10px ;margin:0px 0px 0px 0px "  data-slide-index="9">
+			  <div class="jt-inner">
+			 				<div class="jt-imagecover" style="float:left;margin-right:15px">
+								<img class="jtcs-image" src="https://www.dbm.gov.ph//cache/mod_jt_contentslider/94f6d7e04a4d452035300f18b984988c_2816.jpg" width="300" alt="Socializing Open Government Commitments, Empowering the Nation" />									
+				<div class="hover-icons">
+				<a class="jt-icon icon-url" title="Socializing Open Government Commitments, Empowering the Nation" href="/index.php/the-secretary-2/speeches/2816-socializing-open-government-commitments-empowering-the-nation-2"> <i class="fa fa-link"></i></a>
+			<a class="jt-icon icon-lightbox jt-image-link" href="/images/speeches/OGPinas-Palawan/2.jpg" data-lightbox="jt-1"><i class="fa fa-search"></i></a>
+		</div>				</div>
+										<h5>
+				<a class="jt-title" href="/index.php/the-secretary-2/speeches/2816-socializing-open-government-commitments-empowering-the-nation-2" itemprop="url">
+					Socializing Open Government Commitments, Empowering the Nation				</a></h5>
+										
+				<div class="jt-author-date">
+					
+				<span class="jt-date">
+				<span class="jtc_introdate">May 15, 2024<br/></span>				</span>
+												</span>
+								</div><!--//jt-authot-date-->
+																	<p class="readmore">
+						<a class="btn btn-primary jt-readmore" target="_parent"
+							title="Socializing Open Government Commitments, Empowering the Nation"
+							href="/index.php/the-secretary-2/speeches/2816-socializing-open-government-commitments-empowering-the-nation-2"><i class="fas fa-file-alt" aria-hidden="true">&nbsp;</i> Read More						</a>
+					</p>
+					<div></div><div style="clear:both"></div></div></div>
+		</div>
+</div>
+<style type="text/css">.jtcs227.owl-carousel .owl-nav{justify-content:flex-start}
+.jtcs227.positiontop.owl-carousel .owl-nav{width:100%;position:absolute;top:-40px; bottom:auto;justify-content:flex-start;gap:0 10px;}
+.jtcs227.positioncenter.owl-carousel .owl-nav{width:100%;position:absolute;top:50%; bottom:auto;transform:translateY(-50%);justify-content:space-between; z-index:-1;}
+.jtcs227.positionbottom.owl-carousel .owl-nav{width:100%;position:absolute;top:auto; bottom:-40px;justify-content:flex-start;gap:0 10px;}
+.jtcs227 .owl-dots {position: relative;bottom:-15px;;}
+.jtcs227.owl-carousel .owl-nav.disabled{ display:none}
+</style>
+<script defer type="text/javascript">
+jQuery(document).ready(function() {
+  var el = jQuery('.jtcs227.owl-carousel');
+  var carousel;
+  var carouselOptions = {
+    margin: 20,
+    stagePadding: 0,
+	center: false,
+	loop: true,
+    nav: true,
+    dots: true,
+	mouseDrag:true,
+	rtl: false,
+    slideBy: 'page',
+	autoplay:false,
+	autoplaySpeed:300,
+	smartSpeed:300,
+	autoplayTimeout:4000,
+	autoplayHoverPause:true,
+	mouseDrag: true,
+	touchDrag: true,
+    responsive: {
+      0: {
+        items: 1,
+        rows: 4 //custom option not used by Owl Carousel, but used by the algorithm below
+      },
+      768: {
+        items: 2,
+        rows:3//custom option not used by Owl Carousel, but used by the algorithm below
+      },
+      991: {
+        items:4,
+        rows:1 //custom option not used by Owl Carousel, but used by the algorithm below
+      }
+    }
+  };
+
+  //Taken from Owl Carousel so we calculate width the same way
+  var viewport = function() {
+    var width;
+    if (carouselOptions.responsiveBaseElement && carouselOptions.responsiveBaseElement !== window) {
+      width = jQuery(carouselOptions.responsiveBaseElement).width();
+    } else if (window.innerWidth) {
+      width = window.innerWidth;
+    } else if (document.documentElement && document.documentElement.clientWidth) {
+      width = document.documentElement.clientWidth;
+    } else {
+      console.warn('Can not detect viewport width.');
+    }
+    return width;
+  };
+
+  var severalRows = false;
+  var orderedBreakpoints = [];
+  for (var breakpoint in carouselOptions.responsive) {
+    if (carouselOptions.responsive[breakpoint].rows > 1) {
+      severalRows = true;
+    }
+    orderedBreakpoints.push(parseInt(breakpoint));
+  }
+  
+  //Custom logic is active if carousel is set up to have more than one row for some given window width
+  if (severalRows) {
+    orderedBreakpoints.sort(function (a, b) {
+      return b - a;
+    });
+    var slides = el.find('[data-slide-index]');
+    var slidesNb = slides.length;
+    if (slidesNb > 0) {
+      var rowsNb;
+      var previousRowsNb = undefined;
+      var colsNb;
+      var previousColsNb = undefined;
+
+      //Calculates number of rows and cols based on current window width
+      var updateRowsColsNb = function () {
+        var width =  viewport();
+        for (var i = 0; i < orderedBreakpoints.length; i++) {
+          var breakpoint = orderedBreakpoints[i];
+          if (width >= breakpoint || i == (orderedBreakpoints.length - 1)) {
+            var breakpointSettings = carouselOptions.responsive['' + breakpoint];
+            rowsNb = breakpointSettings.rows;
+            colsNb = breakpointSettings.items;
+            break;
+          }
+        }
+      };
+
+      var updateCarousel = function () {
+        updateRowsColsNb();
+
+        //Carousel is recalculated if and only if a change in number of columns/rows is requested
+        if (rowsNb != previousRowsNb || colsNb != previousColsNb) {
+          var reInit = false;
+          if (carousel) {
+            //Destroy existing carousel if any, and set html markup back to its initial state
+            carousel.trigger('destroy.owl.carousel');
+            carousel = undefined;
+            slides = el.find('[data-slide-index]').detach().appendTo(el);
+            el.find('.fake-col-wrapper').remove();
+            reInit = true;
+          }
+
+
+          //This is the only real 'smart' part of the algorithm
+
+          //First calculate the number of needed columns for the whole carousel
+          var perPage = rowsNb * colsNb;
+          var pageIndex = Math.floor(slidesNb / perPage);
+          var fakeColsNb = pageIndex * colsNb + (slidesNb >= (pageIndex * perPage + colsNb) ? colsNb : (slidesNb % colsNb));
+
+          //Then populate with needed html markup
+          var count = 0;
+          for (var i = 0; i < fakeColsNb; i++) {
+            //For each column, create a new wrapper div
+            var fakeCol = jQuery('<div class="fake-col-wrapper"></div>').appendTo(el);
+            for (var j = 0; j < rowsNb; j++) {
+              //For each row in said column, calculate which slide should be present
+              var index = Math.floor(count / perPage) * perPage + (i % colsNb) + j * colsNb;
+              if (index < slidesNb) {
+                //If said slide exists, move it under wrapper div
+                slides.filter('[data-slide-index=' + index + ']').detach().appendTo(fakeCol);
+              }
+              count++;
+            }
+          }
+          //end of 'smart' part
+
+          previousRowsNb = rowsNb;
+          previousColsNb = colsNb;
+
+          if (reInit) {
+            //re-init carousel with new markup
+            carousel = el.owlCarousel(carouselOptions);
+          }
+        }
+      };
+
+      //Trigger possible update when window size changes
+      jQuery(window).on('resize', updateCarousel);
+
+      //We need to execute the algorithm once before first init in any case
+      updateCarousel();
+    }
+  }
+
+  //init
+  carousel = el.owlCarousel(carouselOptions);
+});
+</script>
+
+<script>
+lightbox.option({
+    fadeDuration:300,
+    fitImagesInViewport:true,
+    imageFadeDuration: 300,
+    positionFromTop: 150,
+    resizeDuration: 150,
+	  })
+</script></div></div></div>
+</div>
+
+<div id="t4-section-9" class="t4-section  t4-section-inview gutter-big"><div class="bg-overlay bg-overlay-image">&nbsp;</div>
+<div class="t4-section-inner container"><div class="t4-row row">
+<div class="t4-col arta-logo col-sm">
+<div class="t4-section-inner section"><div class="section-title-wrap text-left "><h3></h3><div class="sub-heading lead"></div></div><div class="section-ct">
+
+<div class="custom"  >
+	<p><a href="/images/pdffiles/ARTA-anti-fixers-campaign.pdf"><img style="float: left;" src="/images/icons/ARTA.png" width="515" height="268" loading="lazy" data-path="local-images:/icons/ARTA.png" /></a></p>
+<div><span style="color: #ffffff;">Anti Red Tape Authority</span></div>
+<div><span style="color: #ffffff;">Anti-Fixers Campaign</span></div>
+<div> </div></div>
+</div></div>
+</div>
+<div class="t4-col dbm-citizen's-charter col-sm">
+
+
+<div class="custom"  >
+	<p><a href="/index.php/citizenscharter"><img style="float: left;" src="/images/icons/CitizensCharter.png" width="515" height="268" loading="lazy" data-path="local-images:/icons/CitizensCharter.png" /></a></p>
+<p><span style="color: #ffffff;">The DBM Citizen's Charter</span></p></div>
+
+</div>
+<div class="t4-col ogp-logo col-sm">
+
+
+<div class="custom"  >
+	<div> </div>
+<div><a title="Open Government Partnership - Philippines" href="https://ogp.dbm.gov.ph/"><img src="/images/icons/OGP.png" alt="OGP Logo" width="390" height="203" loading="lazy" data-path="local-images:/icons/OGP.png" /></a></div></div>
+
+</div>
+<div class="t4-col dbm-regional-office-map col-sm">
+
+
+<div class="custom"  >
+	<div> </div>
+<table style="border-collapse: collapse; width: 100%;">
+<tbody>
+<tr>
+<td style="width: 99.6471%;">
+<p><img src="/images/icons/RegionalOffices-box.png" alt="" width="390" height="203" loading="lazy" data-path="local-images:/icons/RegionalOffices-box.png" /></p>
+ </td>
+</tr>
+</tbody>
+</table></div>
+
+</div>
+</div></div>
+</div>
+
+<div id="t4-footnav" class="t4-section  t4-footnav  bg-gray-900 text-white  t4-palette-section_blue">
+<div class="t4-section-inner container"><div class="t4-row row">
+<div class="t4-col logo-(2) col-12 col-sm col-md-3">
+<div class=" no-card ">
+        
+
+<div class="custom"  >
+	<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/images/citizen/Buttons/dbm%20white%20logo.png" width="212" height="212" loading="lazy" data-path="local-images:/citizen/Buttons/dbm white logo.png" /></p></div>
+</div>
+
+</div>
+<div class="t4-col footnav-2 col-12 col-sm col-md-3">
+<div class="t4-module module " id="Mod112"><div class="module-inner"><div class="module-ct">
+
+<div class="custom"  >
+	<p>General Solano Street <br />San Miguel, Manila<br />Philippines</p>
+<p>Telephone No: 8657-3300<br />Email:<strong> </strong><span style="color: #ffffff;"><a style="color: #ffffff;" href="mailto:osec@dbm.gov.ph">osec@dbm.gov.ph</a> </span></p></div>
+</div></div></div>
+</div>
+<div class="t4-col footnav-3 col-12 col-sm col-md-3">
+<div class="t4-module module " id="Mod113"><div class="module-inner"><div class="module-ct">
+
+<div class="custom"  >
+	<div><span style="color: #ffffff;"><a style="color: #ffffff;" href="/index.php?view=article&amp;id=2371:government-directory&amp;catid=136">Government Directory</a></span></div>
+<div><span style="color: #ffffff;"><a style="color: #ffffff;" href="https://ps-philgeps.gov.ph/home/">Procurement Service</a></span></div>
+<div><span style="color: #ffffff;"><a style="color: #ffffff;" href="https://philgeps.gov.ph/Indexes/login">Philippine Government Electronic Procurement System</a></span></div>
+<div><span style="color: #ffffff;"><a style="color: #ffffff;" href="http://gppb.gov.ph/">Government Procurement Policy Board - Technical Support Office</a></span></div>
+<div><span style="color: #ffffff;"><a style="color: #ffffff;" href="https://www.btms.gov.ph/">Budget and Treasury Management System</a></span></div>
+<div><span style="color: #ffffff;"><a style="color: #ffffff;" href="http://www.uacs.gov.ph/">Unified Accounts Code Structure</a></span></div>
+<div><span style="color: #ffffff;"><a style="color: #ffffff;" href="https://lguebudget.dbm.gov.ph/hive">LGU 360</a></span></div>
+<div><span style="color: #ffffff;"><a style="color: #ffffff;" href="https://www.bsp.gov.ph/SitePages/InclusiveFinance/InclusiveFinance.aspx">BSP Financial Inclusion</a></span></div>
+<div> </div></div>
+</div></div></div>
+</div>
+<div class="t4-col footnav-4 col-12 col-sm col-md-3">
+<div class="t4-module module " id="Mod177"><div class="module-inner"><div class="module-ct">
+
+<div class="custom"  >
+	<div><span style="color: #ffffff;"><a style="color: #ffffff;" href="https://www.facebook.com/DBMgovph/">DBM Official Facebook Page</a></span></div>
+<div><span style="color: #ffffff;"><a style="color: #ffffff;" href="https://www.facebook.com/DBMUsapangBudget">DBM Usapang Budget Natin</a></span></div>
+<div><span style="color: #ffffff;"><a style="color: #ffffff;" href="https://twitter.com/DBMgovph"> DBM Official Twitter</a></span></div>
+<p><span style="color: #ffffff;"><a style="color: #ffffff;" href="https://www.instagram%2Ccom/dbmgovph">DBM Official Instagram</a></span></p></div>
+</div></div></div>
+</div>
+</div></div>
+</div>
+
+<div id="t4-footer" class="t4-section  t4-footer">
+<div class="t4-section-inner container-fluid">
+
+<div class="custom"  >
+	<p> </p>
+<table style="border-collapse: collapse; width: 68.884%; margin-left: auto; margin-right: auto; height: 302px;">
+<tbody>
+<tr>
+<td style="width: 24.0716%; vertical-align: top;"><br /><img style="display: block; margin-left: auto; margin-right: auto;" role="presentation" src="/images/seal-govph.png" alt="" width="168" height="186" loading="lazy" data-path="local-images:/seal-govph.png" /></td>
+<td style="width: 24.0716%; vertical-align: top;">
+<h4><span style="color: #000000;"><strong><span style="font-family: helvetica; font-size: 8pt;">REPUBLIC OF THE PHILIPPINES</span></strong></span></h4>
+<p><span style="font-family: helvetica; font-size: 8pt;">All content is in the public domain unless otherwise stated.</span></p>
+</td>
+<td style="width: 24.0716%; vertical-align: top;">
+<h4><span style="color: #000000;"><strong><span style="font-family: helvetica; font-size: 8pt;">ABOUT GOVPH</span></strong></span></h4>
+<p><span style="font-family: helvetica; font-size: 8pt;">Learn more about the Philippine government, its structure, how government works and the people behind it.</span></p>
+<ul>
+<li><span style="font-family: helvetica; font-size: 8pt;"><a href="http://www.gov.ph/">GOV.PH</a></span></li>
+<li><span style="font-family: helvetica; font-size: 8pt;"><a href="http://data.gov.ph/index/home">Open Data Portal</a></span></li>
+<li><span style="font-family: helvetica; font-size: 8pt;"><a href="http://www.officialgazette.gov.ph">Official Gazette</a></span></li>
+</ul>
+</td>
+<td style="width: 24.2627%; vertical-align: top;">
+<h4><span style="color: #000000;"><strong><span style="font-family: helvetica; font-size: 8pt;">GOVERNMENT LINKS</span></strong></span></h4>
+<ul>
+<li><span style="font-family: helvetica; font-size: 8pt;"><a href="http://president.gov.ph/">Office of the President</a></span></li>
+<li><span style="font-family: helvetica; font-size: 8pt;"><a href="http://ovp.gov.ph/">Office of the Vice President</a></span></li>
+<li><span style="font-family: helvetica; font-size: 8pt;"><a href="http://www.senate.gov.ph/">Senate of the Philippines</a></span></li>
+<li><span style="font-family: helvetica; font-size: 8pt;"><a href="http://www.congress.gov.ph/">House of Representatives</a></span></li>
+<li><span style="font-family: helvetica; font-size: 8pt;"><a href="http://sc.judiciary.gov.ph/">Supreme Court</a></span></li>
+<li><span style="font-family: helvetica; font-size: 8pt;"><a href="http://ca.judiciary.gov.ph/">Court of Appeals</a></span></li>
+<li><span style="font-family: helvetica; font-size: 8pt;"><a href="http://sb.judiciary.gov.ph/">Sandiganbayan</a></span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="large-7 large-offset-1 medium-offset-1 columns">
+<div class="row"> </div>
+</div></div>
+</div>
+</div><a href='javascript:' id='back-to-top'><i class='fa fa-chevron-up'></i></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+</body>
 </html>
